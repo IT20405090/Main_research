@@ -1,0 +1,100 @@
+/* styles.css */
+.steps .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+    margin-left: 10px;
+  }
+  
+  .steps .box-container .box {
+    background: var(--white);
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+    outline-offset: -1rem;
+    overflow: hidden;
+  }
+  
+  .steps .box-container .box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .steps .box-container .box:nth-child(odd) {
+    background: #fce4ec;
+  }
+  
+  .steps .box-container .box:nth-child(2) {
+    background: var(--orange);
+  }
+  
+  .steps .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--white);
+    line-height: 1;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  
+  .steps .box-container .box p {
+    /* font-size: 1.5rem; */
+    line-height: 1;
+    color: var(--white);
+    padding: 1rem 2rem;
+  } 
+  
+  .steps .box-container .box img {
+    width: 96%;
+    height: 66%;
+  }
+
+  .steps .box-container .box button {
+    width: 100%;
+    background: var(--button-background); /* Background color for the button */
+    color: white; /* Font color for the button text */
+    padding: 12px 0;
+    display: block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    position: relative; /* Added for pseudo-elements */
+  }
+  
+  /* Additional styling for the button text */
+  .steps .box-container .box button a {
+    text-decoration: none;
+    color: inherit;
+    position: relative; /* Ensure the text is visible above pseudo-elements */
+  }
+  
+  /* Pseudo-element for the background image */
+  .steps .box-container .box button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../public/images/growth.jfif') center center no-repeat; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire button */
+    filter: brightness(0.7); /* Adjust image brightness for contrast with text */
+    z-index: -1; /* Place the pseudo-element behind the text */
+  }
+  
+  /* Hover effect for the button */
+  .steps .box-container .box button:hover::before {
+    filter: brightness(1); /* Adjust brightness on hover */
+  }
+  .list-item {
+    font-size: 20px;
+  }
+  .list-item {
+    font-size: 20px;
+    color: var(--text-color); /* You can set your desired text color */
+    margin: 10px 0; /* Add spacing between list items */
+  }
+  
+  .list-item li {
+    list-style: disc; /* Add bullet points to list items */
+    margin-left: 20px; /* Adjust the left margin for bullet points */
+    padding: 5px; /* Add some padding to list items */
+  }
