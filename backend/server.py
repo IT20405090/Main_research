@@ -10,7 +10,7 @@ import time
 from datetime import datetime
 from db_connection import get_db_connection
 
-
+#Ramona
 app = Flask(__name__)
 CORS(app) 
 
