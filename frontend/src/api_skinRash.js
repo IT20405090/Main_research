@@ -1,5 +1,5 @@
 //backend flask app URL
-const API_URL = "http://localhost:5000"; 
+const API_URL = "http://localhost:5001"; 
 
 
 export const uploadImageNormalAbnormal = async (formData) => {

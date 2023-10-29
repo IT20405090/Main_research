@@ -145,4 +145,4 @@ def download_image(filename):
 
 
 if __name__ == "__main__":
-    skin_rash_app.run(debug=True)
+    skin_rash_app.run(debug=True, port=5001)
