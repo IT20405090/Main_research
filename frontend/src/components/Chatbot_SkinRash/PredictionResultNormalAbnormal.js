@@ -28,8 +28,10 @@ function PredictionResultNormalAbnormal() {
         {imageUrl && (
           <div>
             <br></br><br></br>
+            <center>
             <h2>Uploaded Image</h2>
             <img src={imageUrl} alt="Uploaded" />
+            </center>
           </div>
         )}
       </div>

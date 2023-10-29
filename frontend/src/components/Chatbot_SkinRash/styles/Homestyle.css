@@ -204,7 +204,54 @@ section{
 
 /* end */
 
+/* about us 3 */
 
+.about3{
+  background: var(--pink);
+}
+
+.about3 .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about3 .row .image{
+  flex: 1 1 50rem;
+}
+
+.about3 .row .image img{
+  width: 100%;
+  height: 100%;
+}
+
+.about3 .row .content{
+  flex: 1 1 40rem;
+}
+
+.about3 .row .content h3{
+  font-size: 3.5rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.about3 .row .content p{
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.about3 h1 .skin-rash-text {
+  color: var(--blue); /* Color for "Skin Rash" */
+}
+
+.about3 h1 .predictions-text {
+  color: var(--gpink)/*color for "Predictions" */
+}
+
+/* end */
 
 
 /* steps */

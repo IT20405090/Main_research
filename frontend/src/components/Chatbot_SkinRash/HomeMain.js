@@ -89,7 +89,9 @@ function HomeMain() {
                         </p>
                         <br/>
                         <center>
-                        <Link to="/chatbot"> <button type="button" class="btn btn-primary" style={{ backgroundColor:'#3979b6', border:'white', width:'150px', height:'40px', fontSize:'15px'}} >Go To ChatBot</button></Link>
+                        <Link style={{ textDecoration: 'none' }} to="/chatbot"> 
+                        <button type="button" class="btn btn-primary" 
+                        style={{ backgroundColor:'#3979b6', border:'white', width:'150px', height:'40px', fontSize:'15px'}} >Go To ChatBot</button></Link>
                         </center>
                         
                         <br/><br/>
@@ -108,8 +110,8 @@ function HomeMain() {
                         </p>
                         
                         <center>
-                        <Link to="/upload"><button type="button" class="btn btn-primary" style={{backgroundColor:'#e9768f', 
-                        color:'white', border:'white', width:'200px', height:'40px', fontSize:'15px'}} >
+                        <Link to="/upload" style={{ textDecoration: 'none' }}><button type="button" class="btn btn-primary" style={{backgroundColor:'#e9768f', 
+                        color:'white', border:'white', width:'200px', height:'40px', fontSize:'15px', }} >
                             Go To Rash Prediction</button></Link><br/>
                         </center>
                         <br/>
@@ -150,41 +152,35 @@ function HomeMain() {
             {/* home section ends */}
 
             {/* about us section starts */}
-            <section className="about" id="about">
+            <section className="about3" id="about">
                 <h1 className="heading">
-                    <span className="skin-rash-text">Skin Rash</span>
+                    <span className="skin-rash-text">Growth Level</span>
                     <span className="predictions-text"> Prediction</span>
                 </h1>
                 <div className="row">
                     <div className="image">
-                        {/* <img src="/images/about us.png" alt="" /> */}
+                        <img src="/images/about us3.jpeg" alt="" />
                         
                     </div>
                     <div className="content">
                         <h3>Groth level prediction</h3>
                         <p className="desc-text" style={{fontSize:'17px'}}>
-                            growth lvl prediction decriptio  </p>
+                        The system shows the user the growth projection category. Based on the chosen observations, the category represents the baby's growth stage. The height-weight, age-growth level and prediction date – prediction result graphs are generated as per reference for the parents, to view the history of predictions. 
+                        The system determines a score based on the number of selected actions when the parents checks the appropriate
+                        checkboxes for age appropriate activities under each age shown in the side bar for each development milestone which helps the parents to understand the terms physical, cognitive, emotional and language development. The growth predictor generates a prediction whether a child a normal, over grown or under grown based on given measures by the parent at that time. It is advisable to seek consultation with a pediatrician if the child's 
+                        growth category consistently falls into the over or undergrowth range.  </p>
                     </div>
                 </div>
+
+                <center>
+                <a href="/Home">
+                <button type="button" class="btn btn-primary" 
+                        style={{ backgroundColor:'#3979b6', border:'white', width:'150px', height:'40px', fontSize:'15px'}} >Let's start</button>
+                </a>
+                </center>
             </section>
             {/* about us section ends */}
 
-            
-
-            {/* education section start */}
-            <section className="steps" id="steps">
-                <h1 className="heading">Guide Lines</h1>
-                <div className="box-container">
-                    <div className="box">
-                        <h3>groth level prediction</h3>
-                        <p>
-                           
-                        </p>
-                    </div>
-                 
-                </div>
-            </section>
-            {/* education section ends */}
             {/* end of all for growth lvl prediction*/}
 
 
@@ -255,7 +251,8 @@ function HomeMain() {
     {/* You can place your image here */}
     <center>
     <a href="/abc">
-        <button style={{color:'white', backgroundColor:'#007FFF', width:'150px', height:'40px', fontSize:'20PX', borderRadius:'10PX'}}>Let's start</button>
+    <button type="button" class="btn btn-primary" 
+                        style={{ backgroundColor:'#3979b6', border:'white', width:'150px', height:'40px', fontSize:'15px'}} >Let's start</button>
     </a>
     </center>
 </div>
@@ -266,22 +263,7 @@ function HomeMain() {
 
             {/* about us section ends */}
 
-            
 
-            {/* education section start */}
-            <section className="steps" id="steps">
-                <h1 className="heading">Guide Lines</h1>
-                <div className="box-container">
-                    <div className="box">
-                        <h3>record prediction</h3>
-                        <p>
-                           
-                        </p>
-                    </div>
-                 
-                </div>
-            </section>
-            {/* education section ends */}
             {/* end of all for video record prediction*/}
 
 

@@ -120,14 +120,17 @@ const ViewChat = () => {
      <center>
       <h2 className='typing-header'>View Conversations</h2>
      </center>
-     </div>
-      
-      <Link to="/chatbot"><button type="button" class="btn btn-primary" style={{backgroundColor:'#3895d3', color:'white', border:'white', width:'100px', height:'30px', fontSize:'15px'}} >
+
+     <Link to="/chatbot"><button type="button" class="btn btn-primary" style={{backgroundColor:'#3895d3', color:'white', border:'white', width:'100px', height:'30px', fontSize:'15px'}} >
         <i class="far fa-arrow-alt-circle-left"></i>&nbsp;Go Back</button>
       </Link>
+     </div>
+      
+     
                       
 
       &nbsp;&nbsp;&nbsp;&nbsp;
+      <center>
       <input
       className='search-bar'
       type="text"
@@ -136,9 +139,10 @@ const ViewChat = () => {
       onChange={(e) => setSearchText(e.target.value)}
       style={{fontSize:'12px'}}
     />
+     
     
     <img src={search_gif} alt="Search" className="circle-avatar-search" />
-
+    </center>
 
       {loading ? (
         <div>
