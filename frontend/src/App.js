@@ -1,13 +1,14 @@
-//disni and ramons changes
-import React from "react";
+import React from 'react';
+import RouterComponent from './Router';
 
-import Router from "./Router";
-
-
-export default function App() {
-	return (
-			<div className="App">
-				<Router/>
-			</div>
-	);
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <RouterComponent />
+      </header>
+    </div>
+  );
 }
+
+export default App;
