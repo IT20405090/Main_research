@@ -13,7 +13,7 @@ function UploadedImagesViewer() {
         const isConfirmed = window.confirm('Are you sure you want to delete this image?');
       
         if (isConfirmed) {
-          fetch(`http://localhost:5000/delete-image/${filename}`, { method: 'DELETE' })
+          fetch(`http://localhost:5001/delete-image/${filename}`, { method: 'DELETE' })
             .then((response) => {
               if (response.status === 200) {
                 // Image deleted successfully, update the image list
@@ -51,11 +51,11 @@ function UploadedImagesViewer() {
 
     // Function to create a download link for an image
     const createDownloadLink = (imageName) => {
-        return `http://localhost:5000/download-image/${imageName}`;
+        return `http://localhost:5001/download-image/${imageName}`;
     };
 
     useEffect(() => {
-        fetch('http://localhost:5000/list-images')
+        fetch('http://localhost:5001/list-images')
             .then((response) => response.json())
             .then((data) => setImages(data.images))
             .catch((error) => console.error('Error fetching images:', error));
@@ -83,7 +83,7 @@ function UploadedImagesViewer() {
                     {images.map((image, index) => (
                         <tr key={index}>
                             <td>
-                                <img src={`http://localhost:5000/static/uploads/${image}`} 
+                                <img src={`http://localhost:5001/static/uploads/${image}`} 
                                 alt={`Uploaded Image`}
                                 style={{ maxWidth: '400px', maxHeight: '400px' }}
                                  />
