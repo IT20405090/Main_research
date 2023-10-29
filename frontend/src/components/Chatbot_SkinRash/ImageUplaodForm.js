@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import { uploadImageNormalAbnormal, uploadImageSkinRashType } from "../api_skinRash";
+import { uploadImageNormalAbnormal, uploadImageSkinRashType } from "../../api_skinRash";
 import { useNavigate } from "react-router-dom";
 import './styles/UploadForm.css'
 import baby_boy from './images/baby_boy.jpg'

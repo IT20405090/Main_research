@@ -24,16 +24,16 @@ import GrowthGraph from "./components/Growth_Predictor/Graph";
 
 
 // Disni
-import Chatbot from './components/Chatbot';
-import ViewChat from './components/ViewChat'; // Import your ViewChat component
+import Chatbot from './components/Chatbot_SkinRash/Chatbot';
+import ViewChat from './components/Chatbot_SkinRash/ViewChat'; // Import your ViewChat component
 
-import ImageUploadForm from "./components/ImageUplaodForm";
-import PredictionResultRashType from "./components/PredictionResultRashType"
-import PredictionResultNormalAbnormal from "./components/PredictionResultNormalAbnormal";
-import UploadedImagesViewer from "./components/UploadedImagesViewer";
+import ImageUploadForm from "./components/Chatbot_SkinRash/ImageUplaodForm";
+import PredictionResultRashType from "./components/Chatbot_SkinRash/PredictionResultRashType"
+import PredictionResultNormalAbnormal from "./components/Chatbot_SkinRash/PredictionResultNormalAbnormal";
+import UploadedImagesViewer from "./components/Chatbot_SkinRash/UploadedImagesViewer";
 
 
-import HomeMain from "./components/HomeMain"
+import HomeMain from "./components/Chatbot_SkinRash/HomeMain"
 
 
 //Anodya
