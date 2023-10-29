@@ -1,0 +1,203 @@
+/* CSS for the Normal/Abnormal Skin Prediction section */
+.NA-Prediction {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .NA-Prediction h3 {
+    font-size: 20px;
+  }
+  
+  .NA-Prediction input[type="file"] {
+    margin: 10px 0;
+  }
+  
+  /* CSS for the Skin Rash Type Prediction section */
+  .ST-Prediction {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+  
+  .ST-Prediction h3 {
+    font-size: 20px;
+  }
+  
+  .ST-Prediction input[type="file"] {
+    margin: 10px 0;
+  }
+
+
+  
+
+  
+
+
+ 
+
+  
+  /* NA prediction result page */
+
+  .Bg-NAPred {
+    margin: 0;
+    padding: 0;
+    background: rgb(233,118,188);
+    background: radial-gradient(circle, rgba(233,118,188,1) 2%, rgba(255,255,255,1) 100%);
+    background-position: center;
+  
+  }
+
+  .Bg-SRTPred {
+    margin: 0;
+    padding: 0;
+    background: rgb(174,215,238);
+    background: radial-gradient(circle, rgba(174,215,238,0.87718837535014) 0%, rgba(253,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+      
+  }
+
+  .Pred-result{
+    color: rgb(248, 245, 245);
+    background-color: rgb(223, 131, 184);
+    width: 400px;
+    font-size: 50px;
+    
+  }
+
+  .Pred-result2{
+    color: rgb(55, 0, 255);
+    background-color: rgb(210, 232, 247);
+    width: 400px;
+    font-size: 30px;
+    
+  }
+
+
+  /* Uploaded images Views web page */
+
+
+  .bg3{
+    margin-top: 0px;
+    background-color: rgb(230, 242, 250);
+  }
+
+ /* Center the table and add some spacing */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%; /* Adjust the width as needed */
+  margin-top: 20px;
+}
+
+/* Style for table headers */
+table th {
+  background-color: #007BFF; /* Header background color */
+  color: #fff; /* Header text color */
+  font-weight: bold;
+  padding: 10px; /* Header cell padding */
+  border: 1px solid #ccc; /* Header cell border */
+  font-size: 30px;
+}
+
+/* Style for table cells */
+table td {
+  padding: 10px; /* Cell padding */
+  border: 1px solid #ccc; /* Cell border */
+}
+
+/* Alternate row background color */
+table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Light gray background for odd rows */
+}
+
+/* Alternate row background color */
+table tbody tr:nth-child(even) {
+  background-color: #bccef5; /* Light gray background for odd rows */
+}
+
+/* Hover effect on table rows */
+table tbody tr:hover {
+  background-color: #e0e0e0; /* Gray background on hover */
+}
+
+
+
+/* Style for download links */
+table a {
+  text-decoration: none;
+  color: #007BFF; /* Link color */
+}
+
+/* Set a maximum height for images within the table */
+table img {
+  max-width: 100px; /* Adjust the maximum width as needed */
+  max-height: 100px; /* Adjust the maximum height as needed */
+}
+
+/* Center text within the table cells */
+table th, table td {
+  text-align: center;
+}
+
+/* Add a box shadow to the table for a subtle elevation effect */
+table {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Topic {
+  background-image: url('../images/topic_img.jpeg');
+  height: 100px;
+  color: white;
+  font-size: 65px;
+  text-shadow: 2px 2px 4px black; /* Adds a black shadow */
+  -webkit-text-stroke: 2px black; /* Simulates text-stroke (outline) in WebKit browsers */
+}
+
+.Topic2 {
+  background-image: url('../images/topic_bw_img.jpeg');
+  height: 100px;
+  color: white;
+  font-size: 65px;
+  text-shadow: 2px 2px 4px black; /* Adds a black shadow */
+  -webkit-text-stroke: 2px black; /* Simulates text-stroke (outline) in WebKit browsers */
+}
+
+.Topic3 {
+  background-image: url('../images/topic_bw2_img.jpeg');
+  height: 100px;
+  color: white;
+  font-size: 65px;
+  text-shadow: 2px 2px 4px black; /* Adds a black shadow */
+  -webkit-text-stroke: 2px black; /* Simulates text-stroke (outline) in WebKit browsers */
+}
+
+.Topic4{
+  height: 100px;
+  color: #e98fa2;
+  font-size: 65px;
+  text-shadow: 2px 2px 2px black; /* Adds a black shadow */
+
+
+}
+
+.Topic5{
+  height: 100px;
+  color: #87ceeb;
+  font-size: 65px;
+  text-shadow: 2px 2px 2px black; /* Adds a black shadow */
+
+
+}
+
+.Topic6 {
+  background-image: url('../images/topic_img_pink.jpg');
+  height: 100px;
+  color: white;
+  font-size: 65px;
+  text-shadow: 2px 2px 4px black; /* Adds a black shadow */
+  -webkit-text-stroke: 2px black; /* Simulates text-stroke (outline) in WebKit browsers */
+}

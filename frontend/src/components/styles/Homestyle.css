@@ -1,0 +1,260 @@
+
+
+:root{
+    --orange:#f9ba60;
+    --pink:#e9768f;
+    --gpink:#ffc0cb;
+    --blue:#87ceeb;
+    --bblue:#3979b6;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding: 3rem 7%;
+}
+
+.heading{
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 6rem;
+}
+
+
+
+/* home */
+
+.home{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+}
+
+.home .content{
+  flex: 1 1 40rem;
+  padding-top: 6.5rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  color: var(--black);
+}
+
+.home .content h3 .skin-rash-text {
+  color: var(--blue); /* Color for "Skin Rash" */
+}
+
+.home .content h3 .predictions-text {
+  color: var(--gpink)/*color for "Predictions" */
+}
+
+
+.home .content p{
+  font-size: 1.7rem;
+  color: var(--light-color);
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.home .image{
+  flex: 1 1 70rem;
+}
+
+.home .image img{
+  width: 700px;
+  height: 450px;
+  padding: 4rem;
+  margin-left: 30px;
+}
+
+.custom-shape-divider-bottom-1684324473 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1684324473 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1684324473 .shape-fill {
+  fill: var(--pink);
+}
+
+/* end */
+
+/* about us */
+
+.about{
+  background: var(--pink);
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .row .image{
+  flex: 1 1 50rem;
+}
+
+.about .row .image img{
+  width: 100%;
+  height: 100%;
+}
+
+.about .row .content{
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+  font-size: 3.5rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.about .row .content p{
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.about h1 .skin-rash-text {
+  color: var(--blue); /* Color for "Skin Rash" */
+}
+
+.about h1 .predictions-text {
+  color: var(--gpink)/*color for "Predictions" */
+}
+
+/* end */
+
+
+/* about us 2 */
+
+.about2{
+  background: var(--bblue);
+}
+
+.about2 .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about2 .row .image{
+  flex: 1 1 50rem;
+}
+
+.about2 .row .image img{
+  width: 100%;
+  height: 100%;
+}
+
+.about2 .row .content{
+  flex: 1 1 40rem;
+}
+
+.about2 .row .content h3{
+  font-size: 3.5rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.about2 .row .content p{
+  font-size: 1.4rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.about2 h1 .skin-rash-text {
+  color: var(--blue); /* Color for "Skin Rash" */
+}
+
+.about2 h1 .predictions-text {
+  color: var(--gpink)/*color for "Predictions" */
+}
+
+/* end */
+
+
+
+
+/* steps */
+
+.steps .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.steps .box-container .box{
+  background: var(--white);
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  outline: .1rem solid rgba(0,0,0,.1);
+  outline-offset: -1rem;
+  overflow: hidden;
+}
+
+.steps .box-container .box:hover img{
+  transform: scale(1.1);
+}
+
+.steps .box-container .box:nth-child(odd){
+  background: var(--pink);
+}
+
+.steps .box-container .box:nth-child(2){
+  background: var(--bblue);
+}
+
+.steps .box-container .box h3{
+  font-size: 2.5rem;
+  color: var(--white);
+  line-height: 1.8;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.steps .box-container .box p{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--white);
+  padding: 1rem 2rem;
+  
+}
+
+.steps .box-container .box img{
+  width: 100%;
+  height: 66%;
+}
+
+/* end */
