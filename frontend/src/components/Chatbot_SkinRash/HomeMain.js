@@ -104,7 +104,9 @@ function HomeMain() {
                             <p>6. Do not upload two images with the same name</p>
                         </p>
                         
-                        <Link to="/upload"><button type="button" class="btn btn-primary" style={{backgroundColor:'#e9768f', color:'white', border:'white', width:'200px', height:'30px', fontSize:'15px'}} >Go To Rash Prediction</button></Link><br/>
+                        <Link to="/upload"><button type="button" class="btn btn-primary" style={{backgroundColor:'#e9768f', 
+                        color:'white', border:'white', width:'200px', height:'30px', fontSize:'15px'}} >
+                            Go To Rash Prediction</button></Link><br/>
                         <br/>
 
                     </div>
