@@ -36,6 +36,14 @@ import UploadedImagesViewer from "./components/UploadedImagesViewer";
 import HomeMain from "./components/HomeMain"
 
 
+//Anodya
+
+import VideoRecorder from "./components/VideoUpload"
+import InfantBehaviorPrediction from "./components/InfantBehaviorPrediction"  
+import Guidelines from "./components/Guidelines"    
+import VideoHistory from "./components/VideoHostory"
+
+
 
 
 export default function AppRouter() {
@@ -61,7 +69,7 @@ export default function AppRouter() {
           <Route path="/graph" element={<GrowthGraph />} />
 
           {/* disni */}
-          <Route path="/" element={<HomeMain />} />
+          <Route path="/abc" element={<HomeMain />} />
           <Route path="/upload" element={<ImageUploadForm />} />
           <Route path="/result-rash-type" element={<PredictionResultRashType />} />
           <Route path="/result-normal-abnormal" element={<PredictionResultNormalAbnormal />} />
@@ -69,6 +77,13 @@ export default function AppRouter() {
 
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/viewchat" element={<ViewChat />} />
+
+
+          {/* Anodya */}
+          <Route  exact path="/" element={<Guidelines />} />
+          <Route  path="/recording" element={<VideoRecorder />} />
+          <Route  path="/FileUpload" element={<InfantBehaviorPrediction />} />  
+          <Route  path="/VideoHistory" element={<VideoHistory />} />  
 
         
 
