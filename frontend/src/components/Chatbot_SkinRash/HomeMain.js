@@ -88,7 +88,10 @@ function HomeMain() {
                             <p>5. Use keywords when you ask questions (ex: Fever, Red Rashes, how old is you kid ... etc)</p>
                         </p>
                         <br/>
-                        <Link to="/chatbot"> <button type="button" class="btn btn-primary" style={{ backgroundColor:'#3979b6', border:'white', width:'150px', height:'30px', fontSize:'15px'}} >Go To ChatBot</button></Link>
+                        <center>
+                        <Link to="/chatbot"> <button type="button" class="btn btn-primary" style={{ backgroundColor:'#3979b6', border:'white', width:'150px', height:'40px', fontSize:'15px'}} >Go To ChatBot</button></Link>
+                        </center>
+                        
                         <br/><br/>
 
                     </div>
@@ -104,9 +107,11 @@ function HomeMain() {
                             <p>6. Do not upload two images with the same name</p>
                         </p>
                         
+                        <center>
                         <Link to="/upload"><button type="button" class="btn btn-primary" style={{backgroundColor:'#e9768f', 
-                        color:'white', border:'white', width:'200px', height:'30px', fontSize:'15px'}} >
+                        color:'white', border:'white', width:'200px', height:'40px', fontSize:'15px'}} >
                             Go To Rash Prediction</button></Link><br/>
+                        </center>
                         <br/>
 
                     </div>

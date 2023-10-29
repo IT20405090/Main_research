@@ -102,11 +102,11 @@ const Chatbot = () => {
           <div className="chatbot-container">
 
             <Button  size="lg" className="quarter-button" 
-            style={{ borderRadius: '0', marginRight:'-820px', marginTop:'7px', width:'100px' }} href="/viewchat"> <i class="fa-solid fa-bars"></i>&nbsp;History
+            style={{ borderRadius: '0', marginRight:'770px', marginTop:'7px', width:'100px' }} href="/">  <i class="far fa-arrow-alt-circle-left"></i>&nbsp;Go Back
             </Button>
 
-            <Link to="/"><button type="button" class="btn btn-primary" style={{backgroundColor:'#3895d3', color:'white', border:'white', width:'100px', height:'30px', fontSize:'15px'}} >
-              <i class="far fa-arrow-alt-circle-left"></i>&nbsp;Go Back</button>
+            <Link to="/viewchat"><button type="button" class="btn btn-primary" style={{backgroundColor:'#3895d3', color:'white', border:'white', width:'100px', height:'30px', fontSize:'15px'}} >
+            <i class="fa-solid fa-bars"></i> &nbsp;History</button>
             </Link>
 
           <div className="chat-messages-container" >

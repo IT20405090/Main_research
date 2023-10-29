@@ -64,18 +64,18 @@ function ImageUploadForm() {
 
   return (
     <div>
-        <Button  size="lg" className="btn btn-primary" 
-        style={{ borderRadius: '0', marginRight:'-1320px', marginTop:'7px', width:'100px', backgroundColor:'#e9768f', border:'#e9768f' }} 
-        href="/view-images"> <i class="fa-solid fa-bars"></i>&nbsp;History
-        </Button>
+    
 
-        <Link to="/"><button type="button" class="btn btn-primary" style={{backgroundColor:'#3895d3', color:'white', border:'white', width:'100px', height:'30px', fontSize:'15px'}} >
+       
+      <div className="NA-Prediction">
+      <Link to="/"><button type="button" class="btn btn-primary" style={{backgroundColor:'#3895d3', color:'white', border:'white', width:'100px', height:'30px', fontSize:'15px'}} >
           <i class="far fa-arrow-alt-circle-left"></i>&nbsp;Go Back</button>
         </Link>
-      <div className="NA-Prediction">
+        <center>
         <h1 className="Topic5">Normal/Abnormal Skin Prediction</h1>
         <br/><br/><br/><br/>
         <img src={baby_girl} alt="" className="bg pic1" />
+        
         
         <u style={{color:'#e9768f'}}><h2 style={{fontSize:'30px', color:'#e9768f'}}>Description</h2></u><br/>
             <p class="p2" style={{fontSize:'15px'}}>"Welcome to our Normal/Abnormal Skin Prediction System! 
@@ -89,11 +89,11 @@ function ImageUploadForm() {
             to ensuring your child's skin stays healthy and happy. Thank you for choosing us to be a part of 
             your child's skin care journey." </p>
             <br/>
-        
+       
             
               <input style={{fontSize:'13px'}} type="file" onChange={handleFileChangeNormalAbnormal} />
             
-
+              </center>
         <button style={{backgroundColor:'#e9768f', border:'white',width:'600px', height:'30px', color:'white', fontSize:'15px'}} 
         onClick={handleUploadNormalAbnormal}>Upload for Normal/Abnormal Skin Prediction</button>
 
@@ -107,9 +107,15 @@ function ImageUploadForm() {
       </div>
 
       <div className="ST-Prediction">
+      <Button  size="lg" className="btn btn-primary" 
+        style={{ borderRadius: '0', marginRight:'100px', marginTop:'7px', width:'100px', backgroundColor:'#e9768f', border:'#e9768f' }} 
+        href="/view-images"> <i class="fa-solid fa-bars"></i>&nbsp;History
+        </Button>
+        <center>
         <h1 className="Topic4" >Skin Rash Type Prediction</h1>
         <br/><br/><br/><br/>
         <img src={baby_boy} alt="" className="bg pic2" />
+ 
        <u style={{color:'#3979b6'}}> <h2 style={{fontSize:'30px' , color:'#3979b6'}}>Description</h2></u><br/>
             <p class="p1" style={{fontSize:'15px'}}>"Welcome to our Skin Rash Type Prediction System!
              We understand that your baby's skin health is a top priority. 
@@ -125,6 +131,7 @@ function ImageUploadForm() {
              Thank you for entrusting us with your child's skin care journey." </p>
 
         <input style={{fontSize:'13px'}} type="file" onChange={handleFileChangeSkinRashType} />
+        </center>
         
         <button style={{backgroundColor:'#3979b6', border:'white',width:'600px', height:'30px', color:'white', fontSize:'15px'}}
         onClick={handleUploadSkinRashType}>Upload for Skin Rash Type Prediction</button>
