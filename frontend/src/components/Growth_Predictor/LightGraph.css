@@ -1,6 +1,6 @@
 /* LightGraph.css - Light Theme Styles */
 .LightApp {
-    background: url('../../public/images/back5.jpg'); 
+    background: url('../../../public/images/back5.jpg'); 
      /* Set a light background color */
     color: #333; /* Set text color for the light theme */
   }
@@ -86,7 +86,7 @@
 }
 
 .transparent2-container {
-  background-image: url('../../public/images/back4.webp');
+  background-image: url('../../../public/images/back4.webp');
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(11, 11, 11, 0.4);

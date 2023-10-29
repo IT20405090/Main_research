@@ -6,21 +6,21 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-import Home from "./components/Home";
-import Age2Months from "./components/TwoMonths";
-import Age4Months from "./components/FourMonths";
-import Age6Months from "./components/SixMonths";
-import Age9Months from "./components/NineMonths";
-import Age12Months from "./components/TwelveMonths";
-import Age15Months from "./components/FifteenMonths";
-import Age18Months from "./components/EighteenMonths";
-import Age30Months from "./components/ThirtyMonths";
-import Age2Years from "./components/TwoYears";
-import Age3Years from "./components/ThreeYears";
-import Age4Years from "./components/FourYears";
-import Age5Years from "./components/FiveYears";
-import Predict from "./components/PredictGrowth";
-import GrowthGraph from "./components/Graph";
+import Home from "./components/Growth_Predictor/Home";
+import Age2Months from "./components/Growth_Predictor/TwoMonths";
+import Age4Months from "./components/Growth_Predictor/FourMonths";
+import Age6Months from "./components/Growth_Predictor/SixMonths";
+import Age9Months from "./components/Growth_Predictor/NineMonths";
+import Age12Months from "./components/Growth_Predictor/TwelveMonths";
+import Age15Months from "./components/Growth_Predictor/FifteenMonths";
+import Age18Months from "./components/Growth_Predictor/EighteenMonths";
+import Age30Months from "./components/Growth_Predictor/ThirtyMonths";
+import Age2Years from "./components/Growth_Predictor/TwoYears";
+import Age3Years from "./components/Growth_Predictor/ThreeYears";
+import Age4Years from "./components/Growth_Predictor/FourYears";
+import Age5Years from "./components/Growth_Predictor/FiveYears";
+import Predict from "./components/Growth_Predictor/PredictGrowth";
+import GrowthGraph from "./components/Growth_Predictor/Graph";
 
 
 // Disni
@@ -69,7 +69,7 @@ export default function AppRouter() {
           <Route path="/graph" element={<GrowthGraph />} />
 
           {/* disni */}
-          <Route path="/abc" element={<HomeMain />} />
+          <Route exact path="/" element={<HomeMain />} />
           <Route path="/upload" element={<ImageUploadForm />} />
           <Route path="/result-rash-type" element={<PredictionResultRashType />} />
           <Route path="/result-normal-abnormal" element={<PredictionResultNormalAbnormal />} />
@@ -80,7 +80,7 @@ export default function AppRouter() {
 
 
           {/* Anodya */}
-          <Route  exact path="/" element={<Guidelines />} />
+          <Route  path="/abc" element={<Guidelines />} />
           <Route  path="/recording" element={<VideoRecorder />} />
           <Route  path="/FileUpload" element={<InfantBehaviorPrediction />} />  
           <Route  path="/VideoHistory" element={<VideoHistory />} />  
