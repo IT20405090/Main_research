@@ -187,10 +187,10 @@ function HomeMain() {
          <section className="home" id="home">
                 <div className="content">
                     <h3 style={{fontSize:'100px'}}>
-                        <span className="skin-rash-text">Video Recording</span>
-                        <span className="predictions-text">Prediction</span>
+                        <span className="skin-rash-text">Video Recording &</span>
+                        <span className="predictions-text">Behavior Prediction</span>
                     </h3>
-                    <p style={{fontSize:'24px'}}>Informed Choices for Your Precious Little One</p>
+                    <p style={{fontSize:'24px'}}>"Capture Precious Moments with Your Little Ones"</p>
                 </div>
                 <div className="image">
                     {/* <img src="images/home.png" alt="" /> */}
@@ -213,22 +213,50 @@ function HomeMain() {
 
             {/* about us section starts */}
             <section className="about" id="about">
-                <h1 className="heading">
-                    <span className="skin-rash-text">Skin Rash</span>
-                    <span className="predictions-text"> Prediction</span>
-                </h1>
-                <div className="row">
-                    <div className="image">
-                        {/* <img src="/images/about us.png" alt="" /> */}
-                        
-                    </div>
-                    <div className="content">
-                        <h3>Video Record prediction</h3>
-                        <p className="desc-text" style={{fontSize:'17px'}}>
-                            vedio record prediction decription  </p>
-                    </div>
-                </div>
-            </section>
+    <h1 className="heading">
+        <span className="skin-rash-text">Behavior</span>
+        <span className="predictions-text"> Prediction</span>
+    </h1>
+    <div className="row">
+        <div className="content">
+            <h3>Behavior Prediction</h3>
+            <p className="desc-text" style={{ fontSize: '17px' }}>Looking for more than just videos? Our app offers behavior prediction to analyze and understand your video content.</p>
+
+            <p style={{ fontSize: '16px' }}>Video Upload: Users can upload videos of infants' behavior through the application's 
+                user-friendly interface.</p>
+
+            <p style={{ fontSize: '16px' }}>Video Analysis: The system uses advanced algorithms and machine learning to analyze the uploaded videos.
+                 It detects patterns and behaviors exhibited by the infant.</p>
+
+            <p style={{ fontSize: '16px' }}>Abnormal Behavior Detection: The system identifies abnormal behaviors in infants,
+                 such as excessive crying, unusual movements, or other behaviors that might indicate potential health concerns or discomfor</p>
+            <p style={{ fontSize: '16px' }}>Prediction Report: Users receive a detailed prediction report that outlines any detected abnormal behaviors, along with relevant timestamps in the video.</p>
+        </div>
+        <div className="content">
+            <h3>Video Recording</h3>
+            <p className="desc-text" style={{ fontSize: '17px' }}>Our video recording Feature allows you to transform ordinary moments into extraordinary memories. Whether it's your baby's first steps, a heartfelt message, or a fun family gathering, our app is your gateway to preserving those cherished experiences forever</p>
+
+            <p style={{ fontSize: '16px' }}>Seamless Video Recording: With just a click, you can start recording high-quality videos with audio using your device's camera and microphone.</p>
+
+            <p style={{ fontSize: '16px' }}>Date & Time Stamps: Every video you record is automatically timestamped, making it easy to reminisce about the exact moment you captured.</p>
+
+            <p style ={{ fontSize: '16px' }}>Instant Playback: Review your videos immediately after recording and ensure you've got the perfect shot.</p>
+
+            <p style={{ fontSize: '16px' }}>Video Management: Organize and manage your videos effortlessly. Upload, delete, and revisit your memories with ease.</p>
+        </div>
+        <div>
+    {/* You can place your image here */}
+    <center>
+    <a href="/abc">
+        <button style={{color:'white', backgroundColor:'#007FFF', width:'150px', height:'40px', fontSize:'20PX', borderRadius:'10PX'}}>Let's start</button>
+    </a>
+    </center>
+</div>
+
+
+    </div>
+</section>
+
             {/* about us section ends */}
 
             
