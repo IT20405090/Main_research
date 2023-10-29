@@ -6,21 +6,21 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-import Home from "./Home";
-import Age2Months from "./Components/TwoMonths";
-import Age4Months from "./Components/FourMonths";
-import Age6Months from "./Components/SixMonths";
-import Age9Months from "./Components/NineMonths";
-import Age12Months from "./Components/TwelveMonths";
-import Age15Months from "./Components/FifteenMonths";
-import Age18Months from "./Components/EighteenMonths";
-import Age30Months from "./Components/ThirtyMonths";
-import Age2Years from "./Components/TwoYears";
-import Age3Years from "./Components/ThreeYears";
-import Age4Years from "./Components/FourYears";
-import Age5Years from "./Components/FiveYears";
-import Predict from "./Components/PredictGrowth";
-import GrowthGraph from "./Components/Graph";
+import Home from "./components/Home";
+import Age2Months from "./components/TwoMonths";
+import Age4Months from "./components/FourMonths";
+import Age6Months from "./components/SixMonths";
+import Age9Months from "./components/NineMonths";
+import Age12Months from "./components/TwelveMonths";
+import Age15Months from "./components/FifteenMonths";
+import Age18Months from "./components/EighteenMonths";
+import Age30Months from "./components/ThirtyMonths";
+import Age2Years from "./components/TwoYears";
+import Age3Years from "./components/ThreeYears";
+import Age4Years from "./components/FourYears";
+import Age5Years from "./components/FiveYears";
+import Predict from "./components/PredictGrowth";
+import GrowthGraph from "./components/Graph";
 
 
 // Disni
@@ -52,7 +52,7 @@ export default function AppRouter() {
      <Router>
 
         <Routes>
-          <Route path="/SubHome" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/2months" element={<Age2Months />} />
           <Route path="/4months" element={<Age4Months />} />
           <Route path="/6months" element={<Age6Months />} />

@@ -25,7 +25,7 @@ function Graph() {
         chartRef.chartInstance.destroy();
       }
     });
-    navigate('/');
+    navigate('/home');
   };
 
   return (
