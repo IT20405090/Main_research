@@ -74,7 +74,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../public/images/growth.jfif') center center no-repeat; /* Background image */
+    background: url('../../public/images/growth.jfif') center center no-repeat; /* Background image */
     background-size: cover; /* Ensure the image covers the entire button */
     filter: brightness(0.7); /* Adjust image brightness for contrast with text */
     z-index: -1; /* Place the pseudo-element behind the text */
