@@ -83,7 +83,7 @@
     color: rgb(255, 255, 255); /* Add text color: black */
   }
   .BackgroundImage {
-    background: url('../../public/images/back5.jpg'); 
+    background: url('../../../public/images/back5.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -98,7 +98,7 @@
 
   .TopicContainer {
     padding: 20px;
-    background-image: url('../../public/images/back4.webp');  /* Background color without quotes */
+    background-image: url('../../../public/images/back4.webp');  /* Background color without quotes */
     background-size: cover;
     color: white;
     display: flex;
