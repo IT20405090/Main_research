@@ -1,0 +1,81 @@
+/* Guidelines.css */
+.page-background {
+  background-color: #B9D9EB; /* Replace with your desired background color */
+}
+
+.title {
+    background-image: url('../images/babyVideo5.jpg'); 
+    color: white; /* Set the text color to white */
+    padding: 20px;
+    border-radius: 5px;
+    height: 120px;
+    text-shadow: 0 0 10px black; /* Add a black shadow */
+    font-size: 28px; /* Increase the text size to 24px */
+    font-family:  sans-serif; /* Change to your desired font */
+}
+
+  
+.guidelines-container {
+  max-width: 800px; /* Adjust the width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #c1cedd;
+  border-radius: 10px;
+  background-color: #e7cceb;
+}
+  
+  .image-container {
+    flex: 1;
+  }
+  
+
+  .circular-image {
+    width: 300px; /* Increase the width to make the circular image larger */
+    height: 300px; /* Increase the height to match the width for a circular shape */
+    border: 5px solid rgb(220, 220, 235); /* Set the border color to blue */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #fff; /* Set the background color inside the circle to white */
+    margin-right: 30px; /* Add a right margin to create a gap between images */
+    margin-top: 20px;
+}
+
+  .circular-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  
+  
+  .text {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .list-item {
+    text-align: left; /* Left-align the text */
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    margin: 0 auto; /* Center the list item on the page */
+    max-width: 800px; /* Set a maximum width for the list item */
+    padding: 10px; /* Add padding for better readability */
+    list-style-type:circle;
+}
+
+  .button {
+    background-color: #007FFF;
+    color: white;
+    width: 150px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  
+
+ 

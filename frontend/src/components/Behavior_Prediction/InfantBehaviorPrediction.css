@@ -1,0 +1,92 @@
+.page3-background {
+  background-color: #B9D9EB; /* Replace with your desired background color */
+}
+
+
+
+
+.titleAnalysis {
+    background-image: url('../images/babyVideo5.jpg'); 
+    color: white; /* Set the text color to white */
+    padding: 20px;
+    border-radius: 5px;
+    height: 100px;
+    text-shadow: 0 0 10px black; /* Add a black shadow */
+    font-size: 28px; /* Increase the text size to 24px */
+    font-family:  sans-serif; /* Change to your desired font */
+}
+
+
+.circular-image12 {
+    width: 280px; /* Increase the width to make the circular image larger */
+    height: 280px; /* Increase the height to match the width for a circular shape */
+    border: 5px solid rgb(220, 220, 235); /* Set the border color to blue */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #fff; /* Set the background color inside the circle to white */
+    margin-right: 30px; /* Add a right margin to create a gap between images */
+    margin-top: 20px;
+}
+
+  .circular-images12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circular-upload{
+    width: 150px; /* Increase the width to make the circular image larger */
+    height: 150px; /* Increase the height to match the width for a circular shape */
+    border: 5px solid rgb(220, 220, 235); /* Set the border color to blue */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #fff; /* Set the background color inside the circle to white */
+    margin-right: 30px;/* Add a right margin to create a gap between images */
+    margin-top: 20px;
+  }
+
+
+.instructions-analysis {
+  background-color: #faf5f5;
+  padding: 10px;
+  width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(61, 59, 59, 0.2);
+  margin-left: 90px;
+}
+
+.instructionsA h2 {
+  display: inline; /* Display instruction titles on the same line */
+  font-weight: bold;
+  margin-right: 200px; 
+  align-items: left;/* Add some spacing between title and content */
+}
+
+.instructionsA ul {
+  list-style:circle; /* Remove default list styles */
+  padding: 0;
+  margin: 20px;
+}
+
+.instructionsA ul li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+.uploadImgae{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  
+}
+
+.destextupload{
+  background-color: rgb(111, 182, 230);
+  border-radius: 20px;
+  margin-right: 40px;
+  width: 350px;
+  border: 5px solid rgb(220, 220, 235);
+  box-shadow: 0 2px 6px ;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+}

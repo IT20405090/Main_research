@@ -38,10 +38,10 @@ import HomeMain from "./components/HomeMain"
 
 //Anodya
 
-import VideoRecorder from "./components/VideoUpload"
-import InfantBehaviorPrediction from "./components/InfantBehaviorPrediction"  
-import Guidelines from "./components/Guidelines"    
-import VideoHistory from "./components/VideoHostory"
+import VideoRecorder from "./components/Behavior_Prediction/VideoUpload"
+import InfantBehaviorPrediction from "./components/Behavior_Prediction/InfantBehaviorPrediction"  
+import Guidelines from "./components/Behavior_Prediction/Guidelines"    
+import VideoHistory from "./components/Behavior_Prediction/VideoHostory"
 
 
 
