@@ -1,6 +1,10 @@
 // Import necessary components and libraries
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 import Home from "./Home";
 import Age2Months from "./Components/TwoMonths";
@@ -19,6 +23,20 @@ import Predict from "./Components/PredictGrowth";
 import GrowthGraph from "./Components/Graph";
 
 
+// Disni
+import Chatbot from './components/Chatbot';
+import ViewChat from './components/ViewChat'; // Import your ViewChat component
+
+import ImageUploadForm from "./components/ImageUplaodForm";
+import PredictionResultRashType from "./components/PredictionResultRashType"
+import PredictionResultNormalAbnormal from "./components/PredictionResultNormalAbnormal";
+import UploadedImagesViewer from "./components/UploadedImagesViewer";
+
+
+import HomeMain from "./components/HomeMain"
+
+
+
 
 export default function AppRouter() {
     return (
@@ -26,7 +44,7 @@ export default function AppRouter() {
      <Router>
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/SubHome" element={<Home />} />
           <Route path="/2months" element={<Age2Months />} />
           <Route path="/4months" element={<Age4Months />} />
           <Route path="/6months" element={<Age6Months />} />
@@ -42,10 +60,22 @@ export default function AppRouter() {
           <Route path="/predict" element={<Predict />} />
           <Route path="/graph" element={<GrowthGraph />} />
 
+          {/* disni */}
+          <Route path="/" element={<HomeMain />} />
+          <Route path="/upload" element={<ImageUploadForm />} />
+          <Route path="/result-rash-type" element={<PredictionResultRashType />} />
+          <Route path="/result-normal-abnormal" element={<PredictionResultNormalAbnormal />} />
+          <Route path="/view-images" element={<UploadedImagesViewer />} />
+
+          <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/viewchat" element={<ViewChat />} />
+
+        
 
         </Routes>
     
       </Router>
+      <ToastContainer />
     </div>
   );
 }

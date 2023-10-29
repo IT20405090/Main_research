@@ -1,0 +1,253 @@
+/* Chatbot.css */
+
+.Full-Chat{
+  margin-top: 0px;
+  background-image: url('../images/sky.jpg');
+}
+
+.chat-frame{
+  margin-top: 100px;
+
+}
+
+.chatbot-container {
+ 
+  width: 90vw; /* 90% of the viewport width */
+  max-width: 1000px; /* Set a maximum width to avoid excessive stretching */
+  height: 500px;
+  margin: 0 auto; /* Center the container horizontally */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(45, 66, 158, 0.918);
+  flex-direction: column-reverse; /* Reverse the flex direction */
+}
+
+/* Add a media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  .chatbot-container {
+      width: 95vw; /* Adjust the width for smaller screens */
+  }
+}
+
+  
+.chatbot-messages {
+  font-size: 13px;
+  background-color: #7bb8e0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-height: 500px; /* Set a maximum height for the chat container */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  display: flex;
+  flex-direction: column; /* To stack messages vertically */
+  /* scroll-behavior: smooth; Remove smooth scrolling behavior */
+}
+  
+
+  .Bubbles {
+    display: flex;
+    flex-direction: column; /* To stack messages vertically */
+  }
+  
+  .user-message {
+    background-color: #007BFF;
+    color: #fff;
+    align-self: flex-end; /* Align to the right */ 
+    border-radius: 20px; /* Oval shape */
+    padding: 10px 15px; /* Adjust padding as needed */
+    max-width: 70%; /* Limit the maximum width */
+    word-wrap: break-word; /* Allow text to wrap within the bubble */
+    display: inline-block; /* Adjust to display as inline-block */
+  }
+  
+  .bot-message {
+    background-color: #ececec;
+    align-self: flex-start; /* Align to the left */
+    border-radius: 20px; /* Oval shape */
+    padding: 10px 15px; /* Adjust padding as needed */
+    max-width: 70%; /* Limit the maximum width */
+    word-wrap: break-word; /* Allow text to wrap within the bubble */
+    display: inline-block; /* Adjust to display as inline-block */
+  }
+  
+
+  .user-timestamp {
+    font-size: 12px;
+    color: #031231; /* Color for user messages */
+    margin-top: 5px; /* Adjust the spacing between the text and timestamp */
+    align-self: flex-end;
+  }
+  
+  .bot-timestamp {
+    font-size: 12px;
+    color: #031231; /* Color for bot messages */
+    margin-top: 5px; /* Adjust the spacing between the text and timestamp */
+    align-self: flex-start;
+  }
+  
+  
+  
+  .chatbot-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+.msg-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .send {
+    padding: 8px 25px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  /* Add these styles to your CSS file */
+.delete-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.circle-avatar {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes it circular */
+}
+
+
+
+  .message-avatar img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Add spacing between avatar and text */
+    margin-top: -50px;
+  }
+
+
+
+
+
+/* end  */
+
+
+
+
+
+
+  /* for view chats page */
+
+  .ViewPage{
+    background-image: url('../images/viewChat.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+  }
+  .conversation-card {
+    background-color: var(--card-background-color);
+
+    max-width: 400px; /* Set a fixed width */
+    max-height: 300px; /* Set a fixed maximum height */
+    overflow-y: auto; /* Add a vertical scrollbar when content exceeds the height */
+    margin: 10px; /* Add some margin for spacing between cards */
+    padding: 10px; /* Add padding for inner content spacing */
+    display: inline-block; /* Allow the cards to appear next to each other */
+    border: 1px solid #ccc; /* Add a border for better separation */
+    border-radius: 50px; /* Add rounded corners for better aesthetics */
+  }
+
+  /* search bar styles */
+  
+ /* Hide scrollbar for Chrome, Safari, and Opera */
+.conversation-card::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.conversation-card::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Make the scrollbar thumb (the draggable part) transparent */
+}
+
+/* Hide scrollbar for IE and Edge */
+.conversation-card {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  max-height: 200px;
+}
+
+.conversation-card::-webkit-scrollbar-track {
+  background: transparent; /* Make the scrollbar track (the background) transparent */
+}
+
+.search-bar {
+  width: 800px !important;
+ 
+  height: 45px;
+  border: 9px solid transparent;
+  border-image: linear-gradient(135deg, #FF6CAB, #3B82F6) 1;
+  border-image-slice: 1;
+}
+
+.circle-avatar-search {
+  width: 70px; /* Adjust the size as needed */
+  height: 70px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes it circular */
+}
+
+/* search bar styles  end here*/
+
+
+/* loading styles here */
+
+.avatar-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* for header  */
+.typing-header {
+  font-size: 70px;
+  font-weight: 500;
+  color: #553c9a;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 700px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Center and style the custom toast body */
+.custom-toast-body {
+  font-size: 24px; /* Increase the font size */
+  text-align: center; /* Center the text horizontally */
+  padding: 20px; /* Add some padding for better spacing */
+  background-color: #51b4db; /* Set the background color */
+  color: white; /* Set the text color to white */
+  border-radius: 50px;
+}
+
+
