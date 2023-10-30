@@ -7,15 +7,19 @@ from PIL import Image
 import cv2
 from tensorflow.keras.models import load_model
 import time
+import os
+import json
 from datetime import datetime
 from db_connection import get_db_connection
 
-#Ramona
+
 app = Flask(__name__)
 CORS(app) 
 
 # Get the MongoDB collection
 videos_collection = get_db_connection()
+
+
 
 
 
@@ -111,9 +115,6 @@ def make_prediction(frames):
 
 
 
-
-
-
 ## to save video recording
 @app.route('/save_video', methods=['POST'])
 def save_video():
@@ -148,7 +149,22 @@ def get_videos():
     
 
 
+@app.route('/delete_video/<int:index>', methods=['DELETE'])
+def delete_video(index):
+    try:
+        if 0 <= index < len(videos_collection):
+            # Delete the video record by index
+            deleted_video = videos_collection.pop(index)
+            return jsonify({"message": "Video deleted successfully", "deleted_video": deleted_video})
+        else:
+            return jsonify({"message": "Video index out of bounds"})
 
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+
+    
 
 
 @app.route('/videos/<filename>')
@@ -157,5 +173,62 @@ def serve_video(filename):
     return send_from_directory(video_directory, filename)
 
 
+
+# Endpoint to save video details to the database
+@app.route('/save_video_details', methods=['POST'])
+def save_video_details():
+    try:
+        data = request.get_json()
+
+        # Get video details from the request
+        video_id = data.get('videoId')
+        result = data.get('result')
+        video_size = data.get('videoSize')
+        prediction_date = data.get('predictionDate')
+
+        # Create a dictionary to save in the database
+        video_data = {
+            'video_id': video_id,
+            'result': result,
+            'video_size': video_size,
+            'prediction_date': prediction_date,
+        }
+
+        # Save video details to the "prediction_details" collection
+        video_details_collection = videos_collection["prediction_details"]
+        video_details_collection.insert_one(video_data)
+
+        return jsonify({"message": "Video details saved to the database", "video_id": video_id})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+    
+
+
+@app.route('/prediction_history', methods=['GET'])
+def prediction_history():
+    try:
+        # Query the "prediction_details" collection to get prediction history
+        prediction_details_collection = videos_collection["prediction_details"]
+        history_data = list(prediction_details_collection.find({}, {'_id': 0}))
+
+        return jsonify(history_data)
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+
 if __name__ == '__main__':
     app.run()
+
+
+
+
+
+
+
+
+
+
+
+
+
