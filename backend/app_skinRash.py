@@ -103,8 +103,9 @@ def predict_skin_rash_type_route():
             "Cellulitis Impetigo and other Bacterial Infections",
             "Eczema",
             "Exanthems and Drug Eruptions",
-            "Urticaria Hives",
-            "Normal Skin"
+            "Normal Skin",
+            "Urticaria Hives"
+            
         ]
         predicted_type = skin_rash_types[predicted_class[0]]
         

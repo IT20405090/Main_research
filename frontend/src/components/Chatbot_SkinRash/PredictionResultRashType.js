@@ -11,7 +11,7 @@ function PredictionResultRashType() {
 
   return (
     <div className="Bg-SRTPred">
-      <h2 className="Topic">Prediction Result</h2>
+      <center><h2 className="Topic">Prediction Result</h2></center>
 
       <Link to="/upload"><button type="button" class="btn btn-primary" 
         style={{marginRight:'1200px', backgroundColor:'#3895d3', color:'white', border:'white', width:'100px', height:'30px', fontSize:'15px'}} >
@@ -23,8 +23,10 @@ function PredictionResultRashType() {
       {/* Display the uploaded image if available */}
       {imageUrl && (
         <div>
+          <center>
           <h2>Uploaded Image</h2>
           <img src={imageUrl} alt="Uploaded" />
+          </center>
         </div>
       )}
       <br></br><br></br><br></br>

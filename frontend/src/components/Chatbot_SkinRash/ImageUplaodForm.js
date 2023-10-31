@@ -84,11 +84,11 @@ function ImageUploadForm() {
             child's skin conditions, and our system will provide you with accurate predictions 
             and guidance. We're proud to achieve an accuracy level of 45%, giving you reliable results. 
             Your child's well-being is our top priority, and we are here to support you in making informed 
-            decisions about their health. We strongly recommend consulting with a healthcare professional 
+            decisions about their health. It is a must to say this, We strongly recommend consulting with a healthcare professional 
             for a complete evaluation and care plan. Early detection and prompt medical attention are vital 
-            to ensuring your child's skin stays healthy and happy. Thank you for choosing us to be a part of 
+            to ensuring your child's skin stays healthy and happy. At the end, Thank you for choosing us to be a part of 
             your child's skin care journey." </p>
-            <br/>
+            <br/><br/>
        
             
               <input style={{fontSize:'13px'}} type="file" onChange={handleFileChangeNormalAbnormal} />

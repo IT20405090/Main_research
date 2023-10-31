@@ -63,7 +63,7 @@ function UploadedImagesViewer() {
 
     return (
         <div className='bg3'>
-            <h1 className='Topic'>Uploaded Images</h1>
+           <center> <h1 className='Topic'>Uploaded Images</h1></center>
 
             <Link to="/upload"><button type="button" class="btn btn-primary" 
             style={{marginRight:'970px', backgroundColor:'#3895d3', color:'white', border:'white', width:'100px', height:'30px', fontSize:'15px'}} >
