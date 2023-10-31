@@ -8,6 +8,15 @@ from sklearn.preprocessing import LabelEncoder
 import pymongo
 from datetime import datetime
 
+from dotenv import load_dotenv
+import os
+
+
+
+load_dotenv()
+# Replace the hardcoded connection string with the environment variable
+mongo_uri = os.environ.get("MONGODB_URI")
+
 
 app = Flask(__name__)
 CORS(app)
@@ -50,7 +59,7 @@ label_encoders = {}  # Initialize an empty dictionary to store label encoders
 
 
 # MongoDB connection details
-client = pymongo.MongoClient("mongodb+srv://it20405090:j030Ndw8@predictions.nvnsowv.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient(mongo_uri)
 db = client["growth_prediction"]
 collection = db["new_predictions"]
 

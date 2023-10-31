@@ -1,10 +1,17 @@
 import pymongo
+from dotenv import load_dotenv
+import os
+
+
+
+load_dotenv()
+# Replace the hardcoded connection string with the environment variable
+mongo_uri = os.environ.get("MONGODB_URI")
 
 def get_db_connection():
     try:
         # Replace this connection string with your actual MongoDB Atlas connection string
-        atlas_connection_string = "mongodb+srv://Anodya:Anodya123@cluster0.ta3qef8.mongodb.net/?retryWrites=true&w=majority"
-        client = pymongo.MongoClient(atlas_connection_string)
+           client = pymongo.MongoClient(mongo_uri)
 
         db = client["video_database"]
         videos_collection = db["videos"]
