@@ -63,7 +63,8 @@ function Age12Months() {
         }}
       >
         <h1>Development Milestones - 12 Months</h1>
-        <p>
+        <br />
+        <p className="boxed-paragraph">
           <i>
             This page serves as a valuable tool to provide insights into
             age-appropriate activities for your child and offers a scoring
@@ -77,6 +78,7 @@ function Age12Months() {
             their activities and growth.
           </i>
         </p>
+        <br />
         <h3>
           Please mark the checkboxes corresponding to the activities that your
           baby successfully accomplishes within each developmental milestone to
@@ -85,7 +87,10 @@ function Age12Months() {
 
         {data ? (
           <div>
-            <h2>Cognitive Milestones</h2>
+            <br />
+            <h2>
+              <u>Cognitive Milestones</u>
+            </h2>
             <div>
               {data.cognitive.split(", ").map((item, index) => (
                 <label key={index} className="checkbox-label">
@@ -94,16 +99,18 @@ function Age12Months() {
                     name="cognitive"
                     onChange={updateScores}
                   />
-                  {item}
-                  <br />
+                  <span className="checkbox-text">{item}</span>
                 </label>
               ))}
-              <p>
+              <br />
+              <p className="boxed-paragraph">
                 <b>Cognitive Development is: {scores.cognitive}</b>
               </p>
             </div>
 
-            <h2>Emotional Milestones</h2>
+            <h2>
+              <u>Emotional Milestones</u>
+            </h2>
             <div>
               {data.emotional.split(", ").map((item, index) => (
                 <label key={index} className="checkbox-label">
@@ -112,16 +119,19 @@ function Age12Months() {
                     name="emotional"
                     onChange={updateScores}
                   />
-                  {item}
+                  <span className="checkbox-text">{item}</span>
                   <br />
                 </label>
               ))}
-              <p>
+              <br />
+              <p className="boxed-paragraph">
                 <b>Emotional Development is: {scores.emotional}</b>
               </p>
             </div>
 
-            <h2>Language Milestones</h2>
+            <h2>
+              <u>Language Milestones</u>
+            </h2>
             <div>
               {data.language.split(", ").map((item, index) => (
                 <label key={index} className="checkbox-label">
@@ -130,16 +140,19 @@ function Age12Months() {
                     name="language"
                     onChange={updateScores}
                   />
-                  {item}
+                  <span className="checkbox-text">{item}</span>
                   <br />
                 </label>
               ))}
-              <p>
+              <br />
+              <p className="boxed-paragraph">
                 <b>Language Development is: {scores.language}</b>
               </p>
             </div>
 
-            <h2>Physical Milestones</h2>
+            <h2>
+              <u>Physical Milestones</u>
+            </h2>
             <div>
               {data.physical.split(", ").map((item, index) => (
                 <label key={index} className="checkbox-label">
@@ -148,11 +161,12 @@ function Age12Months() {
                     name="physical"
                     onChange={updateScores}
                   />
-                  {item}
+                  <span className="checkbox-text">{item}</span>
                   <br />
                 </label>
               ))}
-              <p>
+              <br />
+              <p className="boxed-paragraph">
                 <b>Physical Development is: {scores.physical}</b>
               </p>
             </div>

@@ -60,62 +60,100 @@ function Age2Years() {
         }}
       >
         <h1>Development Milestones - 2 Years</h1>
-        <p><i>This page serves as a valuable tool to provide insights into age-appropriate activities for your child and offers a scoring system for monitoring their developmental milestones. It's important to remember that every child progresses at their own pace, and not all children will achieve the same milestones at the same time. This is perfectly normal. Open discussions about your child's development with your healthcare provider during routine medical check-ups are highly recommended, as it allows for a comprehensive understanding of your child's progress and offers the best approach to observe their activities and growth.</i></p>
+        <br/>
+        <p className="boxed-paragraph"><i>This page serves as a valuable tool to provide insights into age-appropriate activities for your child and offers a scoring system for monitoring their developmental milestones. It's important to remember that every child progresses at their own pace, and not all children will achieve the same milestones at the same time. This is perfectly normal. Open discussions about your child's development with your healthcare provider during routine medical check-ups are highly recommended, as it allows for a comprehensive understanding of your child's progress and offers the best approach to observe their activities and growth.</i></p>
+        <br/>
         <h3>Please mark the checkboxes corresponding to the activities that your baby successfully accomplishes within each developmental milestone to calculate the score</h3>
         
         {data ? (
-  <div>
-    <h2>Cognitive Milestones</h2>
-    <div>
-      {data.cognitive.split(', ').map((item, index) => (
-        <label key={index} className="checkbox-label">
-          <input type="checkbox" name="cognitive" onChange={updateScores} />
-          {item}
-          <br />
-        </label>
-      ))}
-      <p><b>Cognitive Development is: {scores.cognitive}</b></p>
-    </div>
+          <div>
+            <br />
+            <h2>
+              <u>Cognitive Milestones</u>
+            </h2>
+            <div>
+              {data.cognitive.split(", ").map((item, index) => (
+                <label key={index} className="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="cognitive"
+                    onChange={updateScores}
+                  />
+                  <span className="checkbox-text">{item}</span>
+                </label>
+              ))}
+              <br />
+              <p className="boxed-paragraph">
+                <b>Cognitive Development is: {scores.cognitive}</b>
+              </p>
+            </div>
 
-    <h2>Emotional Milestones</h2>
-    <div>
-      {data.emotional.split(', ').map((item, index) => (
-        <label key={index} className="checkbox-label">
-          <input type="checkbox" name="emotional" onChange={updateScores} />
-          {item}
-          <br />
-        </label>
-      ))}
-      <p><b>Emotional Development is: {scores.emotional}</b></p>
-    </div>
+            <h2>
+              <u>Emotional Milestones</u>
+            </h2>
+            <div>
+              {data.emotional.split(", ").map((item, index) => (
+                <label key={index} className="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="emotional"
+                    onChange={updateScores}
+                  />
+                  <span className="checkbox-text">{item}</span>
+                  <br />
+                </label>
+              ))}
+              <br />
+              <p className="boxed-paragraph">
+                <b>Emotional Development is: {scores.emotional}</b>
+              </p>
+            </div>
 
-    <h2>Language Milestones</h2>
-    <div>
-      {data.language.split(', ').map((item, index) => (
-        <label key={index} className="checkbox-label">
-          <input type="checkbox" name="language" onChange={updateScores} />
-          {item}
-          <br />
-        </label>
-      ))}
-      <p><b>Language Development is: {scores.language}</b></p>
-    </div>
+            <h2>
+              <u>Language Milestones</u>
+            </h2>
+            <div>
+              {data.language.split(", ").map((item, index) => (
+                <label key={index} className="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="language"
+                    onChange={updateScores}
+                  />
+                  <span className="checkbox-text">{item}</span>
+                  <br />
+                </label>
+              ))}
+              <br />
+              <p className="boxed-paragraph">
+                <b>Language Development is: {scores.language}</b>
+              </p>
+            </div>
 
-    <h2>Physical Milestones</h2>
-    <div>
-      {data.physical.split(', ').map((item, index) => (
-        <label key={index} className="checkbox-label">
-          <input type="checkbox" name="physical" onChange={updateScores} />
-          {item}
-          <br />
-        </label>
-      ))}
-      <p><b>Physical Development is: {scores.physical}</b></p>
-    </div>
-  </div>
-) : (
-  <p>Loading data...</p>
-)}
+            <h2>
+              <u>Physical Milestones</u>
+            </h2>
+            <div>
+              {data.physical.split(", ").map((item, index) => (
+                <label key={index} className="checkbox-label">
+                  <input
+                    type="checkbox"
+                    name="physical"
+                    onChange={updateScores}
+                  />
+                  <span className="checkbox-text">{item}</span>
+                  <br />
+                </label>
+              ))}
+              <br />
+              <p className="boxed-paragraph">
+                <b>Physical Development is: {scores.physical}</b>
+              </p>
+            </div>
+          </div>
+        ) : (
+          <p>Loading data...</p>
+        )}
       </div>
       <div
         style={{
@@ -127,13 +165,13 @@ function Age2Years() {
           alignItems: 'center',
         }}
       >
-
+        <br/><br/>
         <img
           src="../images/2y.webp"
           alt="Your Baby At Two Months"
           style={{ width: '100%', height: 'auto' }}
         />
-        <br/>
+        <br/><br/><br/>
         <img
           src="../images/2y2.jpg"
           alt="Your Baby At Two Months"

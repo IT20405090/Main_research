@@ -1,6 +1,24 @@
 p {
-    font-size: 20px; /* You can adjust the font size as needed */
-  }
+  font-size: 20px; /* You can adjust the font size as needed */
+}
+
 .checkbox-label {
-    font-size: 20px; /* Adjust the font size as needed */
-  }
+  display: block; /* Display the labels as block elements */
+}
+
+.checkbox-label input {
+  margin-right: 5px; /* Add some spacing between the checkbox and the label text */
+}
+
+.checkbox-text {
+  font-size: 20px; /* Adjust the font size as needed */
+}
+/* Add this to your CSS file (months.css) */
+.boxed-paragraph {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  /* You can further customize the styling as needed */
+}
