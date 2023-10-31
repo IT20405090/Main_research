@@ -1,10 +1,18 @@
 from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
+
+
+
+load_dotenv()
+# Replace the hardcoded connection string with the environment variable
+mongo_uri = os.environ.get("MONGODB_URI")
 
 # Function to establish a connection to the MongoDB database
 def connect_to_database():
 
     #MongoDB connection details 
-    client = MongoClient("mongodb+srv://it20405090:j030Ndw8@predictions.nvnsowv.mongodb.net/?retryWrites=true&w=majority")
+    client = MongoClient(mongo_uri)
     db = client["growth_prediction"]
     return db
 

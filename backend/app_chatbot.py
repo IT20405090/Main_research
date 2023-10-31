@@ -2,14 +2,19 @@ from flask import Flask, request, jsonify, json
 import long_responses as long
 from flask_cors import CORS, cross_origin
 import re
-from pymongo import MongoClient 
+from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
 
 
 
+load_dotenv()
+# Replace the hardcoded connection string with the environment variable
+mongo_uri = os.environ.get("MONGODB_URI")
 
-# Replace <connection_string> with your actual MongoDB Atlas connection string
-client = MongoClient("mongodb+srv://it20147778:7wyoo1sUIJUVx4eN@cluster0.dejmxcz.mongodb.net/ChatbotDB?retryWrites=true&w=majority")
-db = client["ReactChatBotDB"]  # Replace "your_database_name" with your database name
+# Initialize the MongoDB client with the environment variable
+client = MongoClient(mongo_uri)
+db = client["ReactChatBotDB"]  
 collection = db["Chats"]
 
 # Initialize conversation_id and conversation_messages
@@ -75,7 +80,7 @@ def check_all_messages(message):
 
 
 # Example of using the modified response function
-    response("Goodbye!", "See you later", single_response=True)
+    # response("Goodbye!", "See you later", single_response=True)
 
     # Responses -------------------------------------------------------------------------------------------------------
     response('Hello! How can I help/assist you today 😊 ?', ['hello', 'hi', 'hey', 'sup', 'heyo','hy'], single_response=True)
@@ -89,7 +94,7 @@ def check_all_messages(message):
 
     #common problems asked from parents
     #Food/Eating
-    response(long.R_EATING, ['what', 'my','baby','eat','feed','meal','meals','food'], required_words=['what'])
+    response(long.R_EATING, ['what', 'my','baby','eat','feed','meal','meals','food'], required_words=['what','meal'])
     response(long.R_ADVICE_FEEDING, ['feeding', 'baby','place','how','feed'], required_words=['how', 'feed'])
     response(long.R_DIET, ['when', 'introduce', 'give', 'solid', 'foods'], required_words=['when', 'solid','foods'])
     response(long.R_DIET_TIME_M0, ['when', 'time', 'give', 'foods','food','0', 'month'], required_words=[ 'food','time','0' ,'month'])
