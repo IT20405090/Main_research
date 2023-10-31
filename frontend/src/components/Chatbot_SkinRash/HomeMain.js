@@ -163,11 +163,11 @@ function HomeMain() {
                         
                     </div>
                     <div className="content">
-                        <h3>Groth level prediction</h3>
+                        <h3>The Growth Level Predictor and Development Milestones</h3>
                         <p className="desc-text" style={{fontSize:'17px'}}>
-                        The system shows the user the growth projection category. Based on the chosen observations, the category represents the baby's growth stage. The height-weight, age-growth level and prediction date – prediction result graphs are generated as per reference for the parents, to view the history of predictions. 
+                        This novel solution shows the parents the growth category based on the chosen observations and represents the baby's growth stage. The height-weight, age-growth level and prediction date – prediction result graphs are generated as per reference for the parents, to view the history of predictions. 
                         The system determines a score based on the number of selected actions when the parents checks the appropriate
-                        checkboxes for age appropriate activities under each age shown in the side bar for each development milestone which helps the parents to understand the terms physical, cognitive, emotional and language development. The growth predictor generates a prediction whether a child a normal, over grown or under grown based on given measures by the parent at that time. It is advisable to seek consultation with a pediatrician if the child's 
+                        checkboxes for age appropriate activities under each age shown in the side bar for each development milestone which helps the parents to understand the terms physical, cognitive, emotional and language development. The growth predictor generates a prediction whether a child is a normal, over grown or under grown based on given measures by the parent at that time. It is advisable to seek consultation with a pediatrician if the child's 
                         growth category consistently falls into the over or undergrowth range.  </p>
                     </div>
                 </div>
