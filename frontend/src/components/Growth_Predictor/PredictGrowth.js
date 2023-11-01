@@ -121,21 +121,29 @@ function Predict({ age }) {
   };
 
   return (
-    <div className="BackgroundImage">
-      <ToastContainer />
-      <div className="TopicContainer">
+    <div className="BackgroundImage1">
+      <div className="TopicContainer1">
         <center>
-          <h1 className="Topic">Child Growth Predictor</h1>
+        <div className="PredictComponent">
+          <h1 className="Topic123">Child Growth Predictor</h1>
+        </div>
         </center>
       </div>
 
       <center>
+        <br/>
         <div className="input-container">
           <br />
-          <div className="row">
+          <div className="custom-row">
           <h1>Step 01:</h1>
           
-          <img
+      
+           <img
+            src="/images/cloud.gif"
+            alt="Child Growth Icon"
+            className="image-icon"
+          />
+           <img
             src="/images/cloud.gif"
             alt="Child Growth Icon"
             className="image-icon"
@@ -185,7 +193,7 @@ function Predict({ age }) {
             measurements of the child.
           </p>
         </div>
-          <br />
+          <br /><br />
           <h2>
             <label style={{ color: "black" }}>
               Age (use the slider to enter the age):{" "}
@@ -203,7 +211,7 @@ function Predict({ age }) {
             className="slider-label"
           />
           <br />
-          <div className="input-row">
+          <div className="custom-input-row">
           <b><label>Height (to the nearest number in centimeters):</label></b>
             <input
               type="number"
@@ -221,7 +229,7 @@ function Predict({ age }) {
             />
           </div>
           <br/>
-          <div className="row">
+          <div className="custom-row">
           <h1>Step 02:</h1>
           
           <img
@@ -229,7 +237,7 @@ function Predict({ age }) {
             alt="Child Growth Icon"
             className="image-icon"
           />
-          <img
+           <img
             src="/images/cloud.gif"
             alt="Child Growth Icon"
             className="image-icon"
@@ -239,6 +247,12 @@ function Predict({ age }) {
             alt="Child Growth Icon"
             className="image-icon"
           />
+          <img
+            src="/images/cloud.gif"
+            alt="Child Growth Icon"
+            className="image-icon"
+          />
+          
           <img
             src="/images/cloud.gif"
             alt="Child Growth Icon"
@@ -272,16 +286,17 @@ function Predict({ age }) {
             all children are same, yet every child progresses at their own pace.
           </p>
           </div>
-          <div className="column">
-            <div className="row">
+          <br/>
+          <div className=".custom-column">
+            <div className="custom-row">
               <div className="input-container3">
-                <h3><u>Physical Development</u></h3>
-                <div className="column">
+                <h3 ><u>Physical Development</u></h3>
+                <div className=".custom-column">
                   <b>
-                    <label>Gross Motor Development Status:</label>
+                    <label style={{ fontSize: '16px' }}>Gross Motor Development Status:</label>
                   </b>
                   &nbsp;
-                  <i>
+                  <i style={{ fontSize: '13px' }}>
                     This refers to the child's ability to control and coordinate
                     large muscle movements, such as crawling, walking, and
                     running. This value can be similar to the value that comes
@@ -295,7 +310,7 @@ function Predict({ age }) {
                     name="gross_motor"
                     value={formData.gross_motor}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -304,12 +319,12 @@ function Predict({ age }) {
                   </select>
                 </div>
 
-                <div className="column">
-                  <label>
+                <div className=".custom-column">
+                  <label style={{ fontSize: '16px' }}>
                     <b>Fine Motor Development Status:</b>
                   </label>
                   &nbsp;
-                  <i>
+                  <i style={{ fontSize: '13px' }}>
                     This refers to the child's ability to control and coordinate
                     small muscle movements, such as using their fingers to pick
                     up small objects, hold a pencil, or button clothes. Fine
@@ -320,7 +335,7 @@ function Predict({ age }) {
                     name="fine_motor"
                     value={formData.fine_motor}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -330,16 +345,16 @@ function Predict({ age }) {
                 </div>
               </div>
               &nbsp;&nbsp;&nbsp;
-              <div className="row">
-                <div className="column">
+              <div className="custom-row">
+                <div className=".custom-column">
                   <div className="input-container2">
                     <h3><u>Social And Emotional Development</u></h3>
-                    <label><b>Emotional Development Status:</b></label>
+                    <label style={{ fontSize: '16px' }}><b>Emotional Development Status:</b></label>
                     <select
                     name="emotional_dev"
                     value={formData.emotional_dev}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -347,12 +362,12 @@ function Predict({ age }) {
                     <option value="excellent">Excellent</option>
                   </select>
                     <h3><u>Cognitive Development</u></h3>
-                    <label><b>How Good At Solving Problems?</b></label>
+                    <label style={{ fontSize: '16px' }}><b>How Good At Solving Problems?</b></label>
                     <select
                     name="problem_solving"
                     value={formData.problem_solving}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -361,27 +376,34 @@ function Predict({ age }) {
                   </select>
 
                     <h3><u>Language Development</u></h3>
-                    <label><b>How Good At Communication?</b></label>
+                    <label style={{ fontSize: '16px' }}><b>How Good At Communication?</b></label>
                     <select
                     name="communication"
                     value={formData.communication}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
                     <option value="good">Good</option>
                     <option value="excellent">Excellent</option>
                   </select>
+                  <br/>
                   </div>
                 </div>
               </div>
-              <div className="column"></div>
+              <div className=".custom-column"></div>
             </div>
           </div>
-          &nbsp;<div className="row">
+          <br/><br/>
+          &nbsp;<div className="custom-row">
           <h1>Step 03:</h1>
           
+          <img
+            src="/images/cloud.gif"
+            alt="Child Growth Icon"
+            className="image-icon"
+          />
           <img
             src="/images/cloud.gif"
             alt="Child Growth Icon"
@@ -436,15 +458,15 @@ function Predict({ age }) {
           </div>
           <center>
             <div className="input-container4">
-              <div className="row">
-                <div className="column">
+              <div className="custom-row">
+                <div className=".custom-column">
                   <div className="input-pair">
-                    <label>Attention And Concentration:</label>
+                    <label style={{ fontSize: '16px' }}>Attention And Concentration To You:</label>
                     <select
                     name="attention"
                     value={formData.attention}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -454,12 +476,12 @@ function Predict({ age }) {
                   </div>
                   &nbsp;
                   <div className="input-pair">
-                    <label>Problem Solving:</label>
+                    <label style={{ fontSize: '16px' }}>Problem Solving Skills And Thinking:</label>
                     <select
                     name="problem_solving"
                     value={formData.problem_solving}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -469,14 +491,14 @@ function Predict({ age }) {
                   </div>
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <div className="column">
+                <div className=".custom-column">
                   <div className="input-pair">
-                    <label>Overactivity and Impulsivity:</label>
+                    <label style={{ fontSize: '16px' }}>How Active When Playing (Overactivity)?</label>
                     <select
                     name="overactivity"
                     value={formData.overactivity}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -486,12 +508,12 @@ function Predict({ age }) {
                   </div>
                   &nbsp;
                   <div className="input-pair">
-                    <label>Passivity Or Inactivity:</label>
+                    <label style={{ fontSize: '16px' }}>How Passive And Inactive When Silent (Inactivity)?</label>
                     <select
                     name="passivity"
                     value={formData.passivity}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -501,15 +523,15 @@ function Predict({ age }) {
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="column">
+              <div className="custom-row">
+                <div className=".custom-column">
                   <div className="input-pair">
-                    <label>How Organized And Planned?</label>
+                    <label style={{ fontSize: '16px' }}>How Organized And Planned?</label>
                     <select
                     name="planning"
                     value={formData.planning}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -519,12 +541,12 @@ function Predict({ age }) {
                   </div>
                   &nbsp;&nbsp;
                   <div className="input-pair">
-                    <label>How Good At Perception Of Directions?</label>
+                    <label style={{ fontSize: '16px' }}>How Good At Perception Of Directions?</label>
                     <select
                     name="perception"
                     value={formData.perception}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -534,14 +556,14 @@ function Predict({ age }) {
                   </div>
                 </div>
                 &nbsp;&nbsp;
-                <div className="column">
+                <div className=".custom-column">
                   <div className="input-pair">
-                    <label>How Good At Perception Of Visual Figures?</label>
+                    <label style={{ fontSize: '16px' }}>How Good At Perception Of Visual Figures?</label>
                     <select
                     name="perception_vf"
                     value={formData.perception_vf}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -551,12 +573,12 @@ function Predict({ age }) {
                   </div>
                   &nbsp;
                   <div className="input-pair">
-                    <label>How Good Is The Memory?</label>
+                    <label style={{ fontSize: '16px' }}>How Good Is The Memory And Remembering Things?</label>
                     <select
                     name="memory"
                     value={formData.memory}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -567,15 +589,15 @@ function Predict({ age }) {
                 </div>
               </div>
               
-              <div className="row">
-                <div className="column">
+              <div className="custom-row">
+                <div className=".custom-column">
                   <div className="input-pair">
-                    <label>How About Speaking Skills?</label>
+                    <label style={{ fontSize: '16px' }}>How Talkative / Speaking Skills?</label>
                     <select
                     name="spoken"
                     value={formData.spoken}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -585,12 +607,12 @@ function Predict({ age }) {
                   </div>
                   &nbsp;&nbsp;
                   <div className="input-pair">
-                    <label>How Good At Reading Skills?</label>
+                    <label style={{ fontSize: '16px' }}>How Good At Reading Letters?</label>
                     <select
                     name="reading"
                     value={formData.reading}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -600,14 +622,14 @@ function Predict({ age }) {
                   </div>
                 </div>
                 &nbsp;&nbsp;&nbsp;
-                <div className="column">
+                <div className=".custom-column">
                   <div className="input-pair">
-                    <label>Social Skills Status:</label>
+                    <label style={{ fontSize: '16px' }}>How Social / Get Along With Others?</label>
                     <select
                     name="social_skills"
                     value={formData.social_skills}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="poor">Poor</option>
                     <option value="fair">Fair</option>
@@ -618,12 +640,12 @@ function Predict({ age }) {
                   &nbsp;
                   &nbsp;
                   <div className="input-pair">
-                    <label>Emotional State (Condition):</label>
+                    <label style={{ fontSize: '16px' }}>Emotional State ("Bad" If Any Special Conditions):</label>
                     <select
                     name="emotional_prob"
                     value={formData.emotional_prob}
                     onChange={handleInputChange}
-                    className="select-input"
+                    className="custom-select-input"
                   >
                     <option value="good">Good</option>
                     <option value="bad">Bad</option>
@@ -643,8 +665,10 @@ function Predict({ age }) {
       <center className={`predicted-category ${showPrediction ? 'show-prediction' : ''}`}>
         {prediction && (
           <div className="prediction-container">
+            <ToastContainer />
             <h2>Predicted Growth Category:</h2>
             <p className="predicted-text">{prediction}</p>
+            <h4 style={{color: "#ec407a"}}>Please note that the prediction provided is based on the values you provided now and the actual outcome may change over time. It is advisable to seek consultation with a pediatrician if the child's growth category consistently falls into the <b>over or undergrowth</b> range.</h4>
           </div>
         )}
       </center>
