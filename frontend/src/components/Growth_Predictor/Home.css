@@ -1,12 +1,12 @@
 /* styles.css */
-.steps .box-container {
+.steps123 .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1rem;
     margin-left: 10px;
   }
   
-  .steps .box-container .box {
+  .steps123 .box-container .box {
     background: var(--white);
     border-radius: 2rem;
     box-shadow: var(--box-shadow);
@@ -15,39 +15,39 @@
     overflow: hidden;
   }
   
-  .steps .box-container .box:hover img {
+  .steps123 .box-container .box:hover img {
     transform: scale(1.1);
   }
   
-  .steps .box-container .box:nth-child(odd) {
+  .steps123 .box-container .box:nth-child(odd) {
     background: #fce4ec;
   }
   
-  .steps .box-container .box:nth-child(2) {
+  .steps123 .box-container .box:nth-child(2) {
     background: var(--orange);
   }
   
-  .steps .box-container .box h3 {
+  .steps123 .box-container .box h3 {
     font-size: 2rem;
-    color: var(--white);
-    line-height: 1;
-    padding-top: 2rem;
+    color: var(--black);
+    line-height: 2;
+    padding-top: 3rem;
     padding-left: 2rem;
   }
   
-  .steps .box-container .box p {
+  .steps123 .box-container .box p {
     /* font-size: 1.5rem; */
     line-height: 1;
-    color: var(--white);
-    padding: 1rem 2rem;
+    color: var(black);
+    padding: 1rem 1rem;
   } 
   
-  .steps .box-container .box img {
+  .steps123 .box-container .box img {
     width: 96%;
     height: 66%;
   }
 
-  .steps .box-container .box button {
+  .steps123 .box-container .box button {
     width: 100%;
     background: var(--button-background); /* Background color for the button */
     color: white; /* Font color for the button text */
@@ -60,14 +60,14 @@
   }
   
   /* Additional styling for the button text */
-  .steps .box-container .box button a {
+  .steps123 .box-container .box button a {
     text-decoration: none;
     color: inherit;
     position: relative; /* Ensure the text is visible above pseudo-elements */
   }
   
   /* Pseudo-element for the background image */
-  .steps .box-container .box button::before {
+  .steps123 .box-container .box button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -81,7 +81,7 @@
   }
   
   /* Hover effect for the button */
-  .steps .box-container .box button:hover::before {
+  .steps123 .box-container .box button:hover::before {
     filter: brightness(1); /* Adjust brightness on hover */
   }
   .list-item {

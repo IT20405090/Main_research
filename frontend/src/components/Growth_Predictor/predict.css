@@ -141,7 +141,7 @@
     flex-wrap: wrap;
     gap: 10px; /* Adjust the gap between input fields */
     width: 100%; /* Adjust the maximum width of the input container */
-    height: 102%;
+    height: 103%;
     background-color: rgba(113, 196, 248, 0.8); /* Transparent white background */
     padding: 20px;
     border-radius: 8px;
@@ -152,7 +152,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Adjust the gap between input fields */
-    max-width: 45%; /* Adjust the maximum width of the input container */
+    max-width: 50%; /* Adjust the maximum width of the input container */
     max-height: 40%;
     background-color: rgba(113, 196, 248, 0.8); /* Transparent white background */
     padding: 20px;

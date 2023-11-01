@@ -296,7 +296,7 @@ function Predict({ age }) {
                     <label style={{ fontSize: '16px' }}>Gross Motor Development Status:</label>
                   </b>
                   &nbsp;
-                  <i style={{ fontSize: '13px' }}>
+                  <i style={{ fontSize: '15px' }}>
                     This refers to the child's ability to control and coordinate
                     large muscle movements, such as crawling, walking, and
                     running. This value can be similar to the value that comes
@@ -324,7 +324,7 @@ function Predict({ age }) {
                     <b>Fine Motor Development Status:</b>
                   </label>
                   &nbsp;
-                  <i style={{ fontSize: '13px' }}>
+                  <i style={{ fontSize: '15px' }}>
                     This refers to the child's ability to control and coordinate
                     small muscle movements, such as using their fingers to pick
                     up small objects, hold a pencil, or button clothes. Fine
