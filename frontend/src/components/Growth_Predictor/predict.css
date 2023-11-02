@@ -26,7 +26,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Adjust the gap between input fields */
-    max-width: 50%; /* Adjust the maximum width of the input container */
+    max-width: 60%; /* Adjust the maximum width of the input container */
     background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
     padding: 20px;
     border-radius: 8px;
@@ -76,13 +76,13 @@
     color: black;
   }
   
-  .Topic {
+.Topic123  {
     font-size: 70px;
     font-weight: bold;
     text-shadow: 3px 2px 0px #0a0a0a;
     color: rgb(255, 255, 255); /* Add text color: black */
   }
-  .BackgroundImage {
+  .BackgroundImage1 {
     background: url('../../../public/images/back5.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
-  .TopicContainer {
+  .TopicContainer1 {
     padding: 20px;
     background-image: url('../../../public/images/back4.webp');  /* Background color without quotes */
     background-size: cover;
@@ -105,31 +105,33 @@
     flex-direction: column;
     align-items: center;
   }
-  .input-row {
+  .custom-input-row {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
   }
   
-  .input-row label {
-    width: 145%;
-    font-size: 20px;
+  .custom-input-row label {
+    width: 100%;
+    font-size: 17px;
   }
   
-  .input-row input {
+  .custom-input-row input {
     width: 15%; /* You can adjust this as needed */
+    font-size: 15px;
   }
-  .h3{
+  .custom-h3 {
+    font-size: 40px; /* Adjust the font size as needed */
     margin-bottom: -10px;
   }
-  .column {
+  .custom-column {
     width: 100%; /* Set the width to 50% to create two equal columns */
     display: inline-block; /* Display the columns side by side */
     vertical-align: top; /* Align columns to the top */
     padding: 10px; /* Add some spacing between columns */
     box-sizing: border-box; /* Include padding in the width */
   }
-  .row {
+  .custom-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px; /* Add margin between rows */
@@ -138,8 +140,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Adjust the gap between input fields */
-    width: 140%; /* Adjust the maximum width of the input container */
-    height: 96%;
+    width: 100%; /* Adjust the maximum width of the input container */
+    height: 103%;
     background-color: rgba(113, 196, 248, 0.8); /* Transparent white background */
     padding: 20px;
     border-radius: 8px;
@@ -150,7 +152,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Adjust the gap between input fields */
-    max-width: 45%; /* Adjust the maximum width of the input container */
+    max-width: 50%; /* Adjust the maximum width of the input container */
     max-height: 40%;
     background-color: rgba(113, 196, 248, 0.8); /* Transparent white background */
     padding: 20px;
@@ -163,7 +165,7 @@
     flex-wrap: wrap;
     gap: 10px; /* Adjust the gap between input fields */
     width: 85%; /* Adjust the maximum width of the input container */
-    max-height: 90%;
+    max-height: 100%;
     background-color: rgba(113, 196, 248, 0.8); /* Transparent white background */
     padding: 20px;
     border-radius: 8px;
@@ -195,12 +197,12 @@
   .predict-button:hover {
     background-color: #0056b3; /* Darker blue color on hover */
   }
-  .select-input {
+  .custom-select-input {
     width: 100%; /* Adjust the width as needed */
-    height: 2rem; /* Adjust the height as needed */
+    height: 3rem; /* Adjust the height as needed */
     padding: 5px; /* Add some padding to make it more visually appealing */
     font-size: 15px; /* Adjust the font size as needed */
-    margin-top: 5px;
+    margin-top: 7px;
   }
   i{
     margin-bottom: 5px;
@@ -231,6 +233,7 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
   }
   
   .InfoTextContainer p {

@@ -52,10 +52,11 @@ const Home = () => {
     height: "100px",
     marginRight: "15px", // Added margin to separate image from text
   };
-  const topicStyle = {
-    fontSize: "70px",
+  const topicStyle123 = {
+    fontSize: "80px",
     fontWeight: "bold",
     textShadow: "2px 2px 0px #0a0a0a",
+    height:"170px"
   };
 
 
@@ -65,7 +66,7 @@ const Home = () => {
     backgroundColor: "white",
     padding: "12px 0",
     display: "block",
-    width: "95%",
+    width: "96%",
     fontSize: "16px",
     margin: "5px 0",
     cursor: "pointer",
@@ -74,8 +75,8 @@ const Home = () => {
     position: "relative",
     height: "140px",
     overflow: "hidden",
-    marginLeft: "15px",
-    marginTop: "62px",
+    marginLeft: "10px",
+    marginTop: "100px",
   };
 
   const buttonStyle2 = {
@@ -84,7 +85,7 @@ const Home = () => {
     backgroundColor: "white",
     padding: "12px 0",
     display: "block",
-    width: "95%",
+    width: "96%",
     fontSize: "16px",
     margin: "5px 0",
     cursor: "pointer",
@@ -93,7 +94,7 @@ const Home = () => {
     position: "relative",
     height: "130px",
     overflow: "hidden",
-    marginLeft: "15px",
+    marginLeft: "10px",
     marginBottom: "25px",
   };
   
@@ -108,7 +109,7 @@ const Home = () => {
     <div>
       <div style={sectionStyle}>
         <center>
-          <h1 style={topicStyle}>The Development Milestones Of A Child</h1>
+          <h1 style={topicStyle123}>The Development Milestones Of A Child</h1>
         </center>
         {/* <img src="/images/playingtoy.webp" alt="Child" width="280" height="200" />
           <img src="/images/baby.webp" alt="Child" width="280" height="200" />
@@ -196,9 +197,9 @@ const Home = () => {
   <li>Social and Emotional Development - Express emotions, interactions, and attachments</li>
 </ul> */}
 </div>
-<div style={{ backgroundColor: "#4682b4" }}>
+<div style={{ backgroundColor: "#81d4fa" }}>
   <br/><br/>
-          <section class="steps" id="steps">
+          <section class="steps123" id="steps">
             <div class="box-container" >
               <div class="box">
                 <h3>What is a "Growth Level Predictor"?</h3>
