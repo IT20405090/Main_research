@@ -11,7 +11,7 @@ mongo_uri = os.environ.get("MONGODB_URI")
 def get_db_connection():
     try:
         # Replace this connection string with your actual MongoDB Atlas connection string
-           client = pymongo.MongoClient(mongo_uri)
+        client = pymongo.MongoClient(mongo_uri)
 
         db = client["video_database"]
         videos_collection = db["videos"]
