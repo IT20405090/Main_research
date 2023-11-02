@@ -42,7 +42,7 @@ import VideoRecorder from "./components/Behavior_Prediction/VideoUpload"
 import InfantBehaviorPrediction from "./components/Behavior_Prediction/InfantBehaviorPrediction"  
 import Guidelines from "./components/Behavior_Prediction/Guidelines"    
 import VideoHistory from "./components/Behavior_Prediction/VideoHostory"
-
+import PredictionHistory from "./components/Behavior_Prediction/PredictionHistory"
 
 
 
@@ -84,7 +84,7 @@ export default function AppRouter() {
           <Route  path="/recording" element={<VideoRecorder />} />
           <Route  path="/FileUpload" element={<InfantBehaviorPrediction />} />  
           <Route  path="/VideoHistory" element={<VideoHistory />} />  
-
+          <Route  path="/PredictionHistory" element={<PredictionHistory />} /> 
         
 
         </Routes>
