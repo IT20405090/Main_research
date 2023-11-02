@@ -45,29 +45,33 @@ function VideoHostory() {
   };
 
   const handleDeleteVideo = (index) => {
+    // Retrieve the video based on the index
     const videoToDelete = videos[index];
     
-    // Make an HTTP request to delete the video by its ID
-    fetch(`http://localhost:5000/delete_video/${videoToDelete._id}`, {
+    // Make an HTTP request to delete the video by its index
+    fetch(`http://localhost:5000/delete_video/${index}`, {
       method: 'DELETE',
     })
       .then((response) => response.json())
       .then((data) => {
         if (data.message === "Video deleted successfully") {
           // Update the video list by removing the deleted video
-          setVideos((prevVideos) => prevVideos.filter((video) => video._id !== videoToDelete._id));
+          setVideos((prevVideos) => prevVideos.filter((video, idx) => idx !== index));
+           // Reload the page
           window.location.reload();
         } else {
           console.error('Error deleting video:', data.message);
-          window.location.reload();
+           // Reload the page
+        window.location.reload();
         }
       })
       .catch((error) => {
         console.error('Error deleting video:', error);
-        window.location.reload();
+         // Reload the page
+         window.location.reload();
       });
   };
-
+  
   return (
     <div className='page12-background'>
       <div className="titlevideohis">
@@ -92,7 +96,7 @@ function VideoHostory() {
                 <p style={{ color: 'darkblue', fontWeight: 'bold' }}>Start Time: {video.start_time}</p>
                 <p style={{ color: 'darkblue', fontWeight: 'bold' }}>End Time: {video.end_time}</p>
                 <p style={{ color: 'darkblue', fontWeight: 'bold' }}>Duration (minutes): {video.duration}</p>
-                {/* <button
+                <button
                   onClick={() => handleDeleteVideo(index)}
                   style={{
                     backgroundColor: 'red',
@@ -106,7 +110,7 @@ function VideoHostory() {
                   }}
                 >
                   Delete
-                </button> */}
+                </button>
               </div>
             </div>
           ))}

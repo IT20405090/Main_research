@@ -1,3 +1,4 @@
+from bson import ObjectId
 from flask import Flask, request, jsonify
 from flask import Flask, send_from_directory
 from flask_cors import CORS
@@ -20,16 +21,23 @@ CORS(app)
 videos_collection = get_db_connection()
 
 
+# Get the current directory of your Python script
+current_directory = os.path.dirname(os.path.abspath(__file__))
+
+# Define the relative paths to the directories you want to create
+VIDEO_DIR = os.path.join(current_directory, "Predictedvideos")
+RECORDED_VIDEO_DIR = os.path.join(current_directory, "recorded_videos")
+MODEL_PATH = os.path.join(current_directory, "trainedModel", "LRCN_model.h5")
 
 
+for directory in [VIDEO_DIR, RECORDED_VIDEO_DIR]:
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
-# Define the directory where you want to save uploaded videos
-VIDEO_DIR = "D:\python\ReactResearch"
-
-RECORDED_VIDEO_DIR = "D:/python/ReactResearch/recorded_videos"
 
 # Load the trained model
-model = load_model("D:\model training videos\model_video_2\LRCN_model___Date_Time_2023_08_29__14_20_04___Loss_0.3715948760509491___Accuracy_0.8095238208770752.h5")
+model = load_model(MODEL_PATH)
+
 # Class labels for predictions
 class_labels = ["Abnormal", "Normal"]
 
@@ -114,7 +122,6 @@ def make_prediction(frames):
 
 
 
-
 ## to save video recording
 @app.route('/save_video', methods=['POST'])
 def save_video():
@@ -137,8 +144,9 @@ def save_video():
         return jsonify({"message": "Video details saved to MongoDB", "video_id": str(video_id)})
     except Exception as e:
         return jsonify({"error": str(e)})
-    
 
+
+# get all videos
 @app.route('/get_videos', methods=['GET'])
 def get_videos():
     try:
@@ -152,25 +160,22 @@ def get_videos():
 @app.route('/delete_video/<int:index>', methods=['DELETE'])
 def delete_video(index):
     try:
-        if 0 <= index < len(videos_collection):
-            # Delete the video record by index
-            deleted_video = videos_collection.pop(index)
-            return jsonify({"message": "Video deleted successfully", "deleted_video": deleted_video})
+        # Find the video by its index and delete it
+        videos = list(videos_collection.find({}, {'_id': 1}))
+        if 0 <= index < len(videos):
+            video_id = videos[index]['_id']
+            deleted_video = videos_collection.find_one_and_delete({"_id": video_id})
+            if deleted_video:
+                return jsonify({"message": "Video deleted successfully", "deleted_video": deleted_video})
+            else:
+                return jsonify({"message": "Video not found"})
         else:
             return jsonify({"message": "Video index out of bounds"})
-
     except Exception as e:
         return jsonify({"error": str(e)})
 
 
 
-    
-
-
-@app.route('/videos/<filename>')
-def serve_video(filename):
-    video_directory = RECORDED_VIDEO_DIR 
-    return send_from_directory(video_directory, filename)
 
 
 
