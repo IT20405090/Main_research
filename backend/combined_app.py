@@ -677,6 +677,7 @@ def get_predictions():
 
 # Anodya- Video record prediction
 
+
 # Get the current directory of your Python script
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
