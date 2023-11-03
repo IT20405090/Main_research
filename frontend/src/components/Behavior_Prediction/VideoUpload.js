@@ -115,9 +115,10 @@ const VideoRecorder = () => {
 
   return (
     <div className='page2-background'>
-      <div  className="titlevideo">
+
+      <div  className="">
         <center>
-            <h1 className='titletext'>
+            <h1 className='titlevideo'>
               Infant Video Recorder
             </h1>
             </center>
@@ -136,6 +137,7 @@ const VideoRecorder = () => {
             </div>
           </div>
 
+          <br/><br/>
           <div className="circular-images-audio">
             <img src={audio} alt="Baby Image 1" className="circular-image-audio" />
             <p className='destext'>Capture precious audio moments of your little one with our audio recording feature. 
