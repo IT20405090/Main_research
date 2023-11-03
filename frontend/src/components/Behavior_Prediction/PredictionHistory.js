@@ -31,8 +31,8 @@ function PredictionHistory() {
   return (
     <div className='page12-background'>
       <center>
-        <div className="titlevideohis">
-          <h1>Prediction History</h1>
+        <div>
+          <h1 className="titlevideohis">Prediction History</h1>
         </div>
         {historyData.map((entry, index) => (
           <div key={index} className="predictionVideo">

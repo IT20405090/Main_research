@@ -74,8 +74,8 @@ function VideoHostory() {
   
   return (
     <div className='page12-background'>
-      <div className="titlevideohis">
-        <h1 className="titletext">Video Recording History</h1>
+      <div className="">
+        <h1 className="titlevideohis">Video Recording History</h1>
       </div>
 
       <div className="circular-imagesvhistory">

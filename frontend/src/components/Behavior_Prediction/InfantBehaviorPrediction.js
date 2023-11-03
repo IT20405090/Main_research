@@ -102,9 +102,9 @@ function InfantBehaviorPrediction() {
 
   return (
     <div className="page3-background">
-        <div  className="titleAnalysis">
+        <div  className="">
           <center>
-             <h1 className='titletext'>
+             <h1 className='titleAnalysis'>
             Infant Behavior Analyze
           </h1>
           </center>
@@ -150,8 +150,8 @@ function InfantBehaviorPrediction() {
           color: 'black',
           padding: '15px 20px',
           borderRadius: '5px',
-          width: '550px',
-          height: '70px',
+          width: '650px',
+          height: '90px',
         }}
       />
       </center>
@@ -196,12 +196,14 @@ function InfantBehaviorPrediction() {
             color: white;
             background-color: red;
             padding: 10px;
+            font-size:15px;
             border-radius: 10px;
           }
           .normal {
             color: white;
             background-color: blue;
             padding: 10px;
+            font-size:15px;
             border-radius: 10px;
           }
         `}

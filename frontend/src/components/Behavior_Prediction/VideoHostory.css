@@ -8,10 +8,12 @@
     background-image: url('../images/babyVideo5.jpg'); 
     color: white; /* Set the text color to white */
     padding: 10px;
+    text-align: center;
     border-radius: 5px;
+    font-weight: bold;
     height: 100px;
     text-shadow: 0 0 10px black; /* Add a black shadow */
-    font-size: 28px; /* Increase the text size to 24px */
+    font-size: 50px; /* Increase the text size to 24px */
     font-family:  sans-serif; /* Change to your desired font */
 }
 

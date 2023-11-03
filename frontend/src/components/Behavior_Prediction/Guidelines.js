@@ -6,7 +6,23 @@ import babyImage2 from '../images/babyVideo12.jpg';
 import babyImage1 from '../images/babyVideo9.jpg';
 import './Guidelines.css'; // Import the CSS file
 
+
+
 const Guidelines = () => {
+
+  const buttonStyle = {
+    backgroundColor: '#007FFF',
+    color: 'white',
+    marginRight:'20px',
+    fontSize:'12px',
+    padding: '5px 10px',
+    borderRadius: '5px',
+    textDecoration: 'none',
+    display: 'inline-block',
+    fontWeight: 'bold'
+  };
+
+
   const guidelines = [
         "Use a good quality camera or smartphone with a high-resolution camera.",
         "Record in well-lit areas to ensure clear visibility of the baby's face and actions.",
@@ -44,8 +60,8 @@ const Guidelines = () => {
     <div className="page-background">
         <div>
           <center>
-            <div  className="title">
-            <h1 className='titletext'>
+            <div  className="">
+            <h1 className='titleGuidlines'>
               Infant Video Recording Guidelines
             </h1>
             </div>
@@ -71,10 +87,11 @@ const Guidelines = () => {
               ))}
             </ul>
             </center>
-            <center>
+            <center style={buttonStyle}>
                   <Link to="/recording" className="button">
+                    
                   <i className="fas fa-camera"></i> Record Video
-
+                    
                 </Link>
                 <br/><br/>
             </center>

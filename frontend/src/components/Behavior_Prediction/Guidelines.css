@@ -3,22 +3,24 @@
   background-color: #B9D9EB; /* Replace with your desired background color */
 }
 
-.title {
+.titleGuidlines {
     background-image: url('../images/babyVideo5.jpg'); 
     color: white; /* Set the text color to white */
     padding: 20px;
     border-radius: 5px;
-    height: 120px;
+    height: 150px;
+    font-weight: bold;
     text-shadow: 0 0 10px black; /* Add a black shadow */
-    font-size: 28px; /* Increase the text size to 24px */
+    font-size: 60px; /* Increase the text size to 24px */
     font-family:  sans-serif; /* Change to your desired font */
-}
+} 
 
   
 .guidelines-container {
-  max-width: 800px; /* Adjust the width as needed */
+  max-width: 900px; /* Adjust the width as needed */
   margin: 0 auto;
   padding: 20px;
+  font-weight: bold;
   text-align: center;
   border: 1px solid #c1cedd;
   border-radius: 10px;
