@@ -119,7 +119,7 @@ def check_all_messages(message):
     response('Hello! How can I help/assist you today 😊 ?', ['hello', 'hi', 'hey', 'sup', 'heyo','hy'], single_response=True)
     response('See you!', ['bye', 'goodbye'], single_response=True)
     response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how','are','you'])
-    response('You\'re welcome! Have a great day/night! ', ['thank you', 'thanks'], single_response=True)
+    response('You\'re welcome! Have a great day/night! ', ['thankyou', 'thanks'], single_response=True)
     response('Thank you!', ['i', 'like', 'this', 'chatbot','love','good','job'], required_words=['chatbot', 'i'])
     response('exit from the chatbot', ['exit'], required_words=['exit'])
 
